@@ -54,6 +54,14 @@ class IAPManager: NSObject {
         // Sends the Request to the Apple AppStore
         request.start()
     }
+
+    func getPriceFormatted(for product: SKProduct) -> String? {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = product.priceLocale
+
+        return formatter.string(from: product.price)
+    }
 }
 
 extension IAPManager.IAPManagerError: LocalizedError {
