@@ -116,7 +116,20 @@ class ViewModel {
     // MARK: - Methods To Implement
     
     func viewDidSetup() {
-        
+        delegate?.willStartLongProcess()
+
+        IAPManager.shared.getProducts { result in
+            DispatchQueue.main.async {
+                self.delegate?.didFinishLongProcess()
+
+                switch result {
+                case .success(let products):
+                    self.model.products = products
+                case .failure(let error):
+                    self.delegate?.showIAPRelatedError(error)
+                }
+            }
+        }
     }
     
     
