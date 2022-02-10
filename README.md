@@ -1,6 +1,15 @@
 # StoreKit
 
-## Terminology
+## Glossary 
+
+* StoreKit
+* SKProduct
+* SKProductsRequest
+* SKProductsRequestDelegate
+* SKPaymentQueue
+* SKPaymentTransactionObserver
+
+## Types of In-App Purchases
 
 * Consumable: A product that is used once, after which it becomes depleted and must be purchased again. Example: Fish food for a fishing app.
 * Non-Consumable: A product that is purchased once and does not expire or decrease with use. Example: Race track for a game app.
