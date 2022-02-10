@@ -18,6 +18,8 @@ class IAPManager: NSObject {
 
     static let shared = IAPManager()
 
+    var onReceiveProductsHandler: ((Result<[SKProduct], IAPManagerError>) -> Void)?
+
     private override init() {
         super.init()
     }
@@ -36,6 +38,22 @@ class IAPManager: NSObject {
             return nil
         }
     }
+
+    func getProducts(withHandler productsReceiveHandler: @escaping (Result<[SKProduct], IAPManagerError>) -> Void) {
+        onReceiveProductsHandler = productsReceiveHandler
+
+        guard let productIDs = getProductIDs() else {
+            productsReceiveHandler(.failure(.noProductIDsFound))
+            return
+        }
+
+        let request = SKProductsRequest(productIdentifiers: Set(productIDs))
+
+        request.delegate = self
+
+        // Sends the Request to the Apple AppStore
+        request.start()
+    }
 }
 
 extension IAPManager.IAPManagerError: LocalizedError {
@@ -46,5 +64,25 @@ extension IAPManager.IAPManagerError: LocalizedError {
         case .productRequestFailed: return "Unable to fetch available In-App Purchase products at the moment."
         case .paymentWasCancelled: return "In-App Purchase process was cancelled."
         }
+    }
+}
+
+extension IAPManager: SKProductsRequestDelegate {
+    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+        let products = response.products
+
+        if products.count > 0 {
+            onReceiveProductsHandler?(.success(products))
+        } else {
+            onReceiveProductsHandler?(.failure(.noProductsFound))
+        }
+    }
+
+    func request(_ request: SKRequest, didFailWithError error: Error) {
+        onReceiveProductsHandler?(.failure(.productRequestFailed))
+    }
+
+    func requestDidFinish(_ request: SKRequest) {
+        // code here if needed...
     }
 }
