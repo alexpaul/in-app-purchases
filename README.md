@@ -27,9 +27,13 @@
 * [Apple Docs: Loading In-App Product Identifiers](https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/loading_in-app_product_identifiers)
 * [Apple Docs: Fetching Product Information from the App Store](https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/fetching_product_information_from_the_app_store)
 
-## Resources
+## Project Demos 
 
-* [FakeGame demo app uses StoreKit to implement in-app purchases](https://github.com/alexpaul/In-App-Purchases/tree/main/FakeGame)
+* [My Repo: FakeGame demo app uses StoreKit to implement in-app purchases](https://github.com/alexpaul/In-App-Purchases/tree/main/FakeGame)
+* [Apple: Demo app Implementing a Store In Your App Using the StoreKit API](https://developer.apple.com/documentation/storekit/in-app_purchase/implementing_a_store_in_your_app_using_the_storekit_api)
+
+## Other Resources 
+
 * [Validating Receipts with the App Store](https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/validating_receipts_with_the_app_store)
 * [Workflow for configuring in-app purchases](https://help.apple.com/app-store-connect/#/devb57be10e7)
-* [Demo app Implementing a Store In Your App Using the StoreKit API](https://developer.apple.com/documentation/storekit/in-app_purchase/implementing_a_store_in_your_app_using_the_storekit_api)
+
