@@ -22,6 +22,8 @@ class IAPManager: NSObject {
 
     var onBuyProductHandler: ((Result<Bool, Error>) -> Void)?
 
+    var totalRestoredPurchases = 0
+
     private override init() {
         super.init()
     }
@@ -83,6 +85,12 @@ class IAPManager: NSObject {
 
         onBuyProductHandler = handler
     }
+
+    func restorePurchases(withHandler handler: @escaping ((_ result: Result<Bool, Error>) -> Void)) {
+        onBuyProductHandler = handler
+        totalRestoredPurchases = 0
+        SKPaymentQueue.default().restoreCompletedTransactions()
+    }
 }
 
 extension IAPManager.IAPManagerError: LocalizedError {
@@ -128,7 +136,8 @@ extension IAPManager: SKPaymentTransactionObserver {
                 onBuyProductHandler?(.success(true))
                 SKPaymentQueue.default().finishTransaction(transaction)
             case .restored:
-                break
+                totalRestoredPurchases += 1
+                SKPaymentQueue.default().finishTransaction(transaction)
             case .failed:
                 if let error = transaction.error as? SKError {
                     if error.code != .paymentCancelled {
@@ -142,6 +151,26 @@ extension IAPManager: SKPaymentTransactionObserver {
                 break
             @unknown default:
                 break
+            }
+        }
+    }
+
+    func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
+        if totalRestoredPurchases != 0 {
+            onBuyProductHandler?(.success(true))
+        } else {
+            print("IAP: No purchases to restore!")
+            onBuyProductHandler?(.success(false))
+        }
+    }
+    
+    func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Error) {
+        if let error = error as? SKError {
+            if error.code != .paymentCancelled {
+                print("IAP Restore Error:", error.localizedDescription)
+                onBuyProductHandler?(.failure(error))
+            } else {
+                onBuyProductHandler?(.failure(IAPManagerError.paymentWasCancelled))
             }
         }
     }

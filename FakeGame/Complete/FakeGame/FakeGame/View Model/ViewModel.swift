@@ -31,7 +31,7 @@ class ViewModel {
     var availableExtraLives: Int {
         return model.gameData.extraLives
     }
-        
+
     var availableSuperPowers: Int {
         return model.gameData.superPowers
     }
@@ -42,7 +42,7 @@ class ViewModel {
     
     
     // MARK: - Init
-        
+
     init() {
 
     }
@@ -151,12 +151,30 @@ class ViewModel {
                     }
                 }
             }
+            return true
         }
-        return true
     }
     
     
     func restorePurchases() {
-        
+        delegate?.willStartLongProcess()
+
+        IAPManager.shared.restorePurchases { (result) in
+            DispatchQueue.main.async {
+                self.delegate?.didFinishLongProcess()
+
+                switch result {
+                case .success(let success):
+                    if success {
+                        self.restoreUnlockedMaps()
+                        self.delegate?.didFinishRestoringPurchasedProducts()
+                    } else {
+                        self.delegate?.didFinishRestoringPurchasesWithZeroProducts()
+                    }
+
+                case .failure(let error): self.delegate?.showIAPRelatedError(error)
+                }
+            }
+        }
     }
 }
