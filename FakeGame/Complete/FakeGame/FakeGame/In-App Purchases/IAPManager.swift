@@ -75,6 +75,10 @@ class IAPManager: NSObject, SKPaymentTransactionObserver {
     func stopObserving() {
         SKPaymentQueue.default().remove(self)
     }
+
+    func canMakePayments() -> Bool {
+        SKPaymentQueue.canMakePayments()
+    }
 }
 
 extension IAPManager.IAPManagerError: LocalizedError {
