@@ -134,8 +134,24 @@ class ViewModel {
     
     
     func purchase(product: SKProduct) -> Bool {
-        // This return value is temporary!
-        // Remove it before adding the actual implementation of the method!
+        if !IAPManager.shared.canMakePayments() {
+            return false
+        } else {
+            delegate?.willStartLongProcess()
+
+            IAPManager.shared.purchase(product: product) { result in
+                DispatchQueue.main.async {
+                    self.delegate?.didFinishLongProcess()
+
+                    switch result {
+                    case .success:
+                        self.updateGameDataWithPurchasedProduct(product)
+                    case .failure(let error):
+                        self.delegate?.showIAPRelatedError(error)
+                    }
+                }
+            }
+        }
         return true
     }
     

@@ -98,6 +98,9 @@ class ViewController: UIViewController {
 
         alertController.addAction(UIAlertAction(title: "Buy now for \(price)", style: .default, handler: { _ in
             // Initiate Purchase
+            if !self.viewModel.purchase(product: product) {
+                self.showSingleAlert(withMessage: "In-App Purchases are not allowd in this device.")
+            }
         }))
 
         alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
