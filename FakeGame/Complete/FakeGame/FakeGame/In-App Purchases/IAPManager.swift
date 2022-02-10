@@ -18,11 +18,11 @@ class IAPManager: NSObject {
 
     static let shared = IAPManager()
 
-    var onReceiveProductsHandler: ((Result<[SKProduct], IAPManagerError>) -> Void)?
+    private var onReceiveProductsHandler: ((Result<[SKProduct], IAPManagerError>) -> Void)?
 
-    var onBuyProductHandler: ((Result<Bool, Error>) -> Void)?
+    private var onBuyProductHandler: ((Result<Bool, Error>) -> Void)?
 
-    var totalRestoredPurchases = 0
+    private var totalRestoredPurchases = 0
 
     private override init() {
         super.init()
