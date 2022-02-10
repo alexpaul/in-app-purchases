@@ -19,6 +19,78 @@
 * [ViewModel.swift](https://github.com/alexpaul/In-App-Purchases/blob/main/FakeGame/Complete/FakeGame/FakeGame/View%20Model/ViewModel.swift)
 * [ViewController.swift](https://github.com/alexpaul/In-App-Purchases/blob/main/FakeGame/Complete/FakeGame/FakeGame/View/ViewController.swift)
 
+## Loading In-App Product Identifiers 
+
+```swift
+fileprivate func getProductIDs() -> [String]? {
+    guard let url = Bundle.main.url(forResource: "IAP_ProductIDs", withExtension: "plist") else {
+        return nil
+    }
+
+    do {
+        let data = try Data(contentsOf: url)
+        let productIDs = try PropertyListSerialization.propertyList(from: data, options: .mutableContainersAndLeaves, format: nil) as? [String] ?? []
+        return productIDs
+    } catch {
+        print(error.localizedDescription)
+        return nil
+    }
+}
+```
+
+## Fetching Product Information from the App Store
+
+```swift
+// IAPManager.swift
+
+func getProducts(withHandler productsReceiveHandler: @escaping (Result<[SKProduct], IAPManagerError>) -> Void) {
+    onReceiveProductsHandler = productsReceiveHandler
+
+    guard let productIDs = getProductIDs() else {
+        productsReceiveHandler(.failure(.noProductIDsFound))
+        return
+    }
+
+    let request = SKProductsRequest(productIdentifiers: Set(productIDs))
+
+    request.delegate = self
+
+    // Sends the Request to the Apple AppStore
+    request.start()
+}
+
+func getPriceFormatted(for product: SKProduct) -> String? {
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .currency
+    formatter.locale = product.priceLocale
+
+    return formatter.string(from: product.price)
+}
+```
+
+```swift
+// SKProductsRequestDelegate
+
+extension IAPManager: SKProductsRequestDelegate {
+    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+        let products = response.products
+
+        if products.count > 0 {
+            onReceiveProductsHandler?(.success(products))
+        } else {
+            onReceiveProductsHandler?(.failure(.noProductsFound))
+        }
+    }
+
+    func request(_ request: SKRequest, didFailWithError error: Error) {
+        onReceiveProductsHandler?(.failure(.productRequestFailed))
+    }
+
+    func requestDidFinish(_ request: SKRequest) {
+        // code here if needed...
+    }
+}
+```
 
 ## Resources 
 
