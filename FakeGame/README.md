@@ -8,3 +8,6 @@
 
 ![Screen Shot 2022-02-09 at 7 58 34 PM](https://user-images.githubusercontent.com/1819208/153316481-0b81655a-71e0-48c0-b4e4-27696b5f341e.png)
 
+## Resources 
+
+* [AppCode - A Complete Guide to In-App Purchases for iOS Development](https://www.appcoda.com/in-app-purchases-guide/)
