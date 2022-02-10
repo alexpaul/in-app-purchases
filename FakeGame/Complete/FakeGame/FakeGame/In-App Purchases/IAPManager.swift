@@ -8,7 +8,7 @@
 
 import StoreKit
 
-class IAPManager: NSObject, SKPaymentTransactionObserver {
+class IAPManager: NSObject {
     enum IAPManagerError: Error {
         case noProductIDsFound
         case noProductsFound
@@ -65,11 +65,6 @@ class IAPManager: NSObject, SKPaymentTransactionObserver {
         return formatter.string(from: product.price)
     }
 
-    //Observe transaction updates.
-    func paymentQueue(_ queue: SKPaymentQueue,updatedTransactions transactions: [SKPaymentTransaction]) {
-        //Handle transaction states here.
-    }
-
     func startObserving() {
         SKPaymentQueue.default().add(self)
     }
@@ -118,5 +113,36 @@ extension IAPManager: SKProductsRequestDelegate {
 
     func requestDidFinish(_ request: SKRequest) {
         // code here if needed...
+    }
+}
+
+extension IAPManager: SKPaymentTransactionObserver {
+    // Observe transaction updates.
+    // This method is called when the state of a transaction changes.
+    func paymentQueue(_ queue: SKPaymentQueue,updatedTransactions transactions: [SKPaymentTransaction]) {
+        //Handle transaction states here.
+
+        transactions.forEach { transaction in
+            switch transaction.transactionState {
+            case .purchased:
+                onBuyProductHandler?(.success(true))
+                SKPaymentQueue.default().finishTransaction(transaction)
+            case .restored:
+                break
+            case .failed:
+                if let error = transaction.error as? SKError {
+                    if error.code != .paymentCancelled {
+                        onBuyProductHandler?(.failure(error))
+                    } else {
+                        onBuyProductHandler?(.failure(IAPManagerError.paymentWasCancelled))
+                    }
+                    print("IAP Error: ", error.localizedDescription)
+                }
+            case .deferred, .purchasing:
+                break
+            @unknown default:
+                break
+            }
+        }
     }
 }
