@@ -20,6 +20,8 @@ class IAPManager: NSObject, SKPaymentTransactionObserver {
 
     var onReceiveProductsHandler: ((Result<[SKProduct], IAPManagerError>) -> Void)?
 
+    var onBuyProductHandler: ((Result<Bool, Error>) -> Void)?
+
     private override init() {
         super.init()
     }
@@ -78,6 +80,13 @@ class IAPManager: NSObject, SKPaymentTransactionObserver {
 
     func canMakePayments() -> Bool {
         SKPaymentQueue.canMakePayments()
+    }
+
+    func purchase(product: SKProduct, withHandler handler: @escaping (Result<Bool, Error>) -> Void) {
+        let payment = SKPayment(product: product)
+        SKPaymentQueue.default().add(payment)
+
+        onBuyProductHandler = handler
     }
 }
 
