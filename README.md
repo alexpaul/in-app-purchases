@@ -29,8 +29,8 @@
 
 ## Project Demos 
 
-* [My Repo: FakeGame demo app uses StoreKit to implement in-app purchases](https://github.com/alexpaul/In-App-Purchases/tree/main/FakeGame)
-* [Apple: Demo app Implementing a Store In Your App Using the StoreKit API](https://developer.apple.com/documentation/storekit/in-app_purchase/implementing_a_store_in_your_app_using_the_storekit_api)
+* [My Repo: FakeGame demo app uses StoreKit to implement in-app purchases (StoreKit)](https://github.com/alexpaul/In-App-Purchases/tree/main/FakeGame)
+* [Apple: Demo app Implementing a Store In Your App Using the StoreKit API (StoreKit 2)](https://developer.apple.com/documentation/storekit/in-app_purchase/implementing_a_store_in_your_app_using_the_storekit_api)
 
 ## Other Resources 
 
