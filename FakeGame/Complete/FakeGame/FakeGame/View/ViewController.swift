@@ -86,7 +86,23 @@ class ViewController: UIViewController {
     // MARK: - Methods To Implement
     
     func showAlert(for product: SKProduct) {
-        
+        guard let price = IAPManager.shared.getPriceFormatted(for: product) else {
+            return
+        }
+
+        let alertController = UIAlertController(
+            title: product.localizedTitle,
+            message: product.localizedDescription,
+            preferredStyle: .alert
+        )
+
+        alertController.addAction(UIAlertAction(title: "Buy now for \(price)", style: .default, handler: { _ in
+            // Initiate Purchase
+        }))
+
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+
+        present(alertController, animated: true)
     }
 }
 

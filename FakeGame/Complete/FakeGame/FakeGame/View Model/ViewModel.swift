@@ -87,9 +87,9 @@ class ViewModel {
         let keyword: String
         
         switch index {
-        case 0: keyword = "extra_lives"
-        case 1: keyword = "superpowers"
-        case 2: keyword = "unlock_maps"
+        case 0: keyword = "extra.3.lives"
+        case 1: keyword = "super.powers"
+        case 2: keyword = "unlock.maps"
         default: keyword = ""
         }
         
