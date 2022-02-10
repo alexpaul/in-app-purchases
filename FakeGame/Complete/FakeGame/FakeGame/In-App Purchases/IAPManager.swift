@@ -8,7 +8,7 @@
 
 import StoreKit
 
-class IAPManager: NSObject {
+class IAPManager: NSObject, SKPaymentTransactionObserver {
     enum IAPManagerError: Error {
         case noProductIDsFound
         case noProductsFound
@@ -61,6 +61,19 @@ class IAPManager: NSObject {
         formatter.locale = product.priceLocale
 
         return formatter.string(from: product.price)
+    }
+
+    //Observe transaction updates.
+    func paymentQueue(_ queue: SKPaymentQueue,updatedTransactions transactions: [SKPaymentTransaction]) {
+        //Handle transaction states here.
+    }
+
+    func startObserving() {
+        SKPaymentQueue.default().add(self)
+    }
+
+    func stopObserving() {
+        SKPaymentQueue.default().remove(self)
     }
 }
 
