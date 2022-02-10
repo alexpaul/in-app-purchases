@@ -53,9 +53,9 @@ class ViewModel {
     fileprivate func updateGameDataWithPurchasedProduct(_ product: SKProduct) {
         // Update the proper game data depending on the keyword the
         // product identifier of the give product contains.
-        if product.productIdentifier.contains("extra_lives") {
+        if product.productIdentifier.contains("extra.3.lives") {
             model.gameData.extraLives = 3
-        } else if product.productIdentifier.contains("superpowers") {
+        } else if product.productIdentifier.contains("super.powers") {
             model.gameData.superPowers = 2
         } else {
             model.gameData.didUnlockAllMaps = true
@@ -172,7 +172,8 @@ class ViewModel {
                         self.delegate?.didFinishRestoringPurchasesWithZeroProducts()
                     }
 
-                case .failure(let error): self.delegate?.showIAPRelatedError(error)
+                case .failure(let error):
+                    self.delegate?.showIAPRelatedError(error)
                 }
             }
         }
