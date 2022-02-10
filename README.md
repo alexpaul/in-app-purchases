@@ -2,12 +2,15 @@
 
 ## Glossary 
 
+* In-App Purchase (Type, Reference Name, Product ID, Pricing, Display Name, Description, optional App Store Promotion)
 * StoreKit
 * SKProduct
 * SKProductsRequest
 * SKProductsRequestDelegate
 * SKPaymentQueue
 * SKPaymentTransactionObserver
+* Sandbox Tester 
+* 
 
 ## Types of In-App Purchases
 
