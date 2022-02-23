@@ -1,4 +1,4 @@
-# Subscription Testing 
+# Testing In-App Purchases
 
 > There are 3 distinct testing environments: Production (App Store), TestFlight (Production Sandbox), and Sandbox (Developer Builds). Each behaves slightly differently and needs to be tested independently.
 
