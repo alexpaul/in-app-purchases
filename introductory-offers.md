@@ -9,7 +9,7 @@
 1. A fresh used Sandbox Test user will be eligible for Introductory Offers.
 2. You can also via the App Store Manage screen put a user back in an "Eligible" state by clicking on "Reset Eligibility" if that user previously used an Introductory Offer.
 3. To test ineligible users, allow the Sandbox user's subscription to expire, typically 20 to 30 minutes, this can also be adjusted via App Store Connect. 
-4. Once the subscripiton has been expired, navigate to iOS Settings > App Store > Sandbox Account. 
+4. Once the subscription has been expired, navigate to iOS Settings > App Store > Sandbox Account. 
 5. Click on "Manage" from the "Sandbox Apple ID" alert and resubscribe to the same Product or a Product from the same Subscription Group.
 6. At this time the logged Sandbox user will not be eligible for Introductory Pricing. Yikes! 😱 A bit of moving around here, but now you should no longer be eligible. 
 
