@@ -7,4 +7,6 @@ A subscription group is a collection of subscription products that has some spec
 * A subscription group also determines the service level of each product, determining the upgrade/downgrade/crossgrade behavior.
 * Subscription groups have localized description data that determine how your app appears in the management menu in the App Store settings.
 
+## Resources 
+
 * [RevenueCat: Subscription Groups Explained](https://www.revenuecat.com/blog/ios-subscription-groups-explained)
