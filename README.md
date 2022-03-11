@@ -2,6 +2,7 @@
 
 ## Glossary 
 
+* [identifierForVendor](https://developer.apple.com/documentation/uikit/uidevice/1620059-identifierforvendor)
 * In-App Purchase: (Type, Reference Name, Product ID, Pricing, Display Name, Description, optional App Store Promotion).
 * In-App Purchase Type: (Consumable, Non-Consumable, Auto-Renewable Subscription and Non-Renewing Subscription).
 * StoreKit: Support in-app purchases and interactions with the App Store.
