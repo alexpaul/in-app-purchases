@@ -4,6 +4,10 @@
 
 > StoreKit testing in Xcode is a local test environment where you can test in-app purchases without connecting to App Store servers. Set up in-app purchases in a StoreKit configuration file then add it to your Xcode project. After you enable the configuration file, the test environment uses this local data when your app calls StoreKit APIs.
 
+![Screen Shot 2022-04-12 at 9 49 37 PM](https://user-images.githubusercontent.com/1819208/163083557-0662d0c6-9855-4399-ab4c-ca6e712f5a18.png)
+
+[Configure and test in-app purchases](https://help.apple.com/app-store-connect/#/dev7e89e149d)
+
 ## Resources
 
 * [Apple docs: Testing In-App Purchases with Sandbox
