@@ -33,6 +33,13 @@
 * [My Repo: FakeGame demo app uses StoreKit to implement in-app purchases (StoreKit)](https://github.com/alexpaul/In-App-Purchases/tree/main/FakeGame)
 * [Apple: Demo app Implementing a Store In Your App Using the StoreKit API (StoreKit 2)](https://developer.apple.com/documentation/storekit/in-app_purchase/implementing_a_store_in_your_app_using_the_storekit_api)
 
+## WWDC Playlist
+
+* [WWDC 2017: What's New in StoreKit](https://devstreaming-cdn.apple.com/videos/wwdc/2017/303f0u5froddl13/303/303_hd_whats_new_in_storekit.mp4?dl=1)
+* [WWDC 2017: Advanced StoreKit](https://devstreaming-cdn.apple.com/videos/wwdc/2017/305k3ed4sd37at/305/305_hd_advanced_storekit.mp4?dl=1)
+* [WWDC 2018: Best Practices and What’s New with In-App Purchases](https://developer.apple.com/videos/play/wwdc2018/704/)
+* [WWDC 2018: Engineering Subscriptions](https://developer.apple.com/videos/play/wwdc2018/705/)
+
 ## Other Resources 
 
 * [Apple Docs: Validating Receipts with the App Store](https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/validating_receipts_with_the_app_store)
