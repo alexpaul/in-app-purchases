@@ -41,6 +41,9 @@
 * [WWDC 2018: Engineering Subscriptions](https://developer.apple.com/videos/play/wwdc2018/705/)
 * [WWDC 2019: In-App Purchases and Using Server-to-Server Notifications](https://developer.apple.com/videos/play/wwdc2019/302/)
 * [WWDC 2019: Subscription Offers Best Practices](https://developer.apple.com/videos/play/wwdc2019/305/)
+* [WWDC 2020: Architecting for subscriptions](https://developer.apple.com/videos/play/wwdc2020/10671/)
+* [WWDC 2020: What’s new with in-app purchase](https://developer.apple.com/videos/play/wwdc2020/10661/)
+* [WWDC 2020: Introducing StoreKit Testing in Xcode](https://developer.apple.com/videos/play/wwdc2020/10659/)
 
 ## Other Resources 
 
