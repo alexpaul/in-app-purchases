@@ -39,6 +39,7 @@
 * [WWDC 2017: Advanced StoreKit](https://devstreaming-cdn.apple.com/videos/wwdc/2017/305k3ed4sd37at/305/305_hd_advanced_storekit.mp4?dl=1)
 * [WWDC 2018: Best Practices and What’s New with In-App Purchases](https://developer.apple.com/videos/play/wwdc2018/704/)
 * [WWDC 2018: Engineering Subscriptions](https://developer.apple.com/videos/play/wwdc2018/705/)
+* [WWDC 2019: In-App Purchases and Using Server-to-Server Notifications](https://developer.apple.com/videos/play/wwdc2019/302/)
 
 ## Other Resources 
 
