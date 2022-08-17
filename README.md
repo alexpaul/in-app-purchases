@@ -44,6 +44,9 @@
 * [WWDC 2020: Architecting for subscriptions](https://developer.apple.com/videos/play/wwdc2020/10671/)
 * [WWDC 2020: What’s new with in-app purchase](https://developer.apple.com/videos/play/wwdc2020/10661/)
 * [WWDC 2020: Introducing StoreKit Testing in Xcode](https://developer.apple.com/videos/play/wwdc2020/10659/)
+* [WWDC 2021: Meet StoreKit 2](https://developer.apple.com/videos/play/wwdc2021/10114/)
+* [WWDC 2021: Manage in-app purchases on your server](https://developer.apple.com/videos/play/wwdc2021/10174/)
+* [WWDC 2021: Support customers and handle refunds](https://developer.apple.com/videos/play/wwdc2021/10175/)
 
 ## Other Resources 
 
