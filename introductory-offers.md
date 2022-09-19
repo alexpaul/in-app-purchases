@@ -4,6 +4,23 @@
 
 > Start by setting up introductory offers in App Store Connect. Then, in your app, determine if the user is eligible to receive an introductory offer. When the app queries the App Store for a list of available products, display the introductory pricing if the user is eligible to receive them.
 
+***
+
+## Testing Introductory Pricing
+
+1. Verify the Product you need to purchase is associated with Introductory Pricing. 
+2. Make sure your using a fresh Apple Store Sandbox Account. If you have questions acquiring an account please contact #gmax-messaging. 
+3. Install a fresh IAP (the build must support In-app Purchasing). In other words the build needs to allow subscription purchasing. 
+4. When presented with the Product page for the app, e.g Newsreader, Cooking or Games, if the product is valid for Introductory Pricing a Strikethrough or similar UI should be visible to indicate the Product is available for Introductory Pricing. See Screenshot below.
+5. Clicking on the Product and making the purchase should also indicate in the Apple presented Subscription UI that you are valid for Introductory Pricing. See screenshot below. 
+
+#### Troubleshooting
+
+* Via the Beta Settings of your app navigate to "Refresh Device Receipt". See screenshot. This will ensure that there is a valid receipt on your test device to be eligible for Intro Pricing. 
+* Ensure that you have a fresh sandbox account. If in doubt reach out to the #gmax-messaging team to get a new Sandbox account for testing.
+
+***
+
 ## Testing Eligible and InEligible Users for Introductory Offers
 
 1. A fresh used Sandbox Test user will be eligible for Introductory Offers.
