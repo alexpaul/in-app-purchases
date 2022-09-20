@@ -8,11 +8,16 @@
 
 ## Testing Introductory Pricing
 
-1. Verify the Product you need to purchase is associated with Introductory Pricing. 
-2. Make sure your using a fresh Apple Store Sandbox Account. If you have questions acquiring an account please contact #gmax-messaging. 
-3. Install a fresh IAP (the build must support In-app Purchasing). In other words the build needs to allow subscription purchasing. 
+1. Verify the Product Purchasing is associated with an Introductory Price. 
+2. Make sure you're using a fresh Apple Store Sandbox Account. If you have questions acquiring an Apple Sandbox account please contact #gmax-messaging. 
+3. Install a fresh IAP Build (the build must support In-app Purchasing). In other words the build needs to allow subscription purchasing from the Bitrise build. 
 4. When presented with the Product page for the app, e.g Newsreader, Cooking or Games, if the product is valid for Introductory Pricing a Strikethrough or similar UI should be visible to indicate the Product is available for Introductory Pricing. See Screenshot below.
+
+![games-landing-page-intro-price](https://user-images.githubusercontent.com/1819208/191151935-24d96d44-1d96-46f8-8891-010a8be83baa.PNG)
+
 5. Clicking on the Product and making the purchase should also indicate in the Apple presented Subscription UI that you are valid for Introductory Pricing. See screenshot below. 
+
+![apple-sub-sheet-intro-pricing](https://user-images.githubusercontent.com/1819208/191151991-9684be8f-e2e6-4612-a96e-c3581e886acf.PNG)
 
 #### Troubleshooting
 
