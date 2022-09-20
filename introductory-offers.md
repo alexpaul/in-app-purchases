@@ -8,7 +8,7 @@
 
 ## Testing Introductory Pricing
 
-1. Verify the Product being Purchased is associated with an Introductory Price. Refer to the Apple documentation or direct questions to `#gmax-messaging`.
+1. Verify the Product being Purchased is associated with an Introductory Price. Refer to the [Apple documentation for Setting up Introductory Pricing on the Appple App Store Connect](https://help.apple.com/app-store-connect/#/deve1d49254f) or direct questions to `#gmax-messaging`.
 2. Make sure you're using a fresh Apple Store Sandbox Account. If you have questions acquiring an Apple Sandbox account please contact `#gmax-messaging`. 
 3. Install a fresh IAP Build (the build must support In-app Purchasing). In other words the build needs to allow subscription purchasing from the Bitrise build. 
 4. When presented with the Product page for the app, e.g Newsreader, Cooking or Games, if the product is valid for Introductory Pricing a Strikethrough or similar UI should be visible to indicate the Product is available for Introductory Pricing. See Screenshot below.
