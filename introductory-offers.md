@@ -13,11 +13,11 @@
 3. Install a fresh IAP Build (the build must support In-app Purchasing). In other words the build needs to allow subscription purchasing from the Bitrise build. 
 4. When presented with the Product page for the app, e.g Newsreader, Cooking or Games, if the product is valid for Introductory Pricing a Strikethrough or similar UI should be visible to indicate the Product is available for Introductory Pricing. See Screenshot below.
 
-![games-landing-page-intro-price](https://user-images.githubusercontent.com/1819208/191151935-24d96d44-1d96-46f8-8891-010a8be83baa.PNG)
+![games-landing-page-intro-price](https://user-images.githubusercontent.com/1819208/191154299-900d2496-12f7-4ab0-b417-d31f00a13ff4.PNG)
 
 5. Clicking on the Product and making the purchase should also indicate in the Apple presented Subscription UI that you are valid for Introductory Pricing. See screenshot below. 
 
-![apple-sub-sheet-intro-pricing](https://user-images.githubusercontent.com/1819208/191151991-9684be8f-e2e6-4612-a96e-c3581e886acf.PNG)
+![apple-sub-sheet-intro-pricing](https://user-images.githubusercontent.com/1819208/191154331-84d459d2-c871-4753-a90e-0250dafd046f.PNG)
 
 #### Troubleshooting
 
