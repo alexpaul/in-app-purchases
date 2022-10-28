@@ -53,3 +53,7 @@
 * [Apple Docs: Validating Receipts with the App Store](https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/validating_receipts_with_the_app_store)
 * [Apple Store Connect: Workflow for configuring in-app purchases](https://help.apple.com/app-store-connect/#/devb57be10e7)
 
+## Troubleshooting 
+
+* [Troubleshooing Invalid Product Ids](https://developer.apple.com/library/archive/technotes/tn2413/_index.html#//apple_ref/doc/uid/DTS40016228-CH1-TROUBLESHOOTING-WHY_ARE_MY_PRODUCT_IDENTIFIERS_BEING_RETURNED_IN_THE_INVALIDPRODUCTIDENTIFIERS_ARRAY_)
+
