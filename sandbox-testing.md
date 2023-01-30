@@ -9,6 +9,16 @@
 * [Apple docs: Configure and test in-app purchases](https://help.apple.com/app-store-connect/#/dev7e89e149d)
 * [RevenueCat](https://www.revenuecat.com/blog/engineering/the-ultimate-guide-to-subscription-testing-on-ios/)
 
+***
+
+## Testing international currencies 
+
+* Create a Sandbox account and select the Region you're interested in e.g India.
+* Navigate to your UI showing the Store Products. 
+* You should now observe that the Product's currency is local to that of the Sandbox account.
+
+***
+
 ## Resources
 
 * [Apple docs: Testing In-App Purchases with Sandbox
