@@ -40,4 +40,5 @@ func productsRequest(_ request: SKProductsRequest, didReceive response: SKProduc
 
 * [Apple docs: Original API for In-App Purchase](https://developer.apple.com/documentation/storekit/in-app_purchase/original_api_for_in-app_purchase)
 * [Handling errors: `SKError`](https://developer.apple.com/documentation/storekit/skerror/code)
+  * e.g `paymentcancelled` Error code indicating that the user canceled a payment request.
 * [Apple docs: `SKPaymentTransaction`](https://developer.apple.com/documentation/storekit/skpaymenttransaction)
