@@ -15,6 +15,20 @@
 5. Click on "Manage" from the "Sandbox Apple ID" alert and resubscribe to the same Product or a Product from the same Subscription Group.
 6. At this time the logged Sandbox user will not be eligible for Introductory Pricing. Yikes! 😱 A bit of moving around here, but now you should no longer be eligible. 
 
+***
+
+## Notes on Configuring Intro Pricing 
+
+* Once the date of the Intro Pricing becomes current ONLY the end date can be modified.
+
+***
+
+## Setting up Intro Pricing 
+
+![Screen Shot 2023-03-23 at 8 20 31 PM](https://user-images.githubusercontent.com/1819208/227392454-dd9089ed-cea4-4625-a6aa-faf86d7c3f6f.png)
+
+***
+
 ## Resources 
 
 * [WWDC 2018: Best Practices and What’s New with In-App Purchases](https://developer.apple.com/videos/play/wwdc2018/704/)
