@@ -63,6 +63,8 @@ print($0.introductoryPrice?.price ?? "") // $29.99
 print($0.introductoryPrice?.price ?? "") // $29.99
 ```
 
+> Note: Intro price is not reflected in the Apple Payment Sheet.
+
 ***
 
 ## Determining if the user is eligible for Intro Pricing
