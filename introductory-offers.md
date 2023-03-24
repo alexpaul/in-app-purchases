@@ -29,6 +29,15 @@
 
 ![Screen Shot 2023-03-23 at 8 22 09 PM](https://user-images.githubusercontent.com/1819208/227392596-fa9eac8b-4a13-45e9-a326-d61e2380bc93.png)
 
+![Screen Shot 2023-03-23 at 8 22 56 PM](https://user-images.githubusercontent.com/1819208/227392671-9622e5a2-6003-4c21-82ab-c24e1d0fc953.png)
+
+![Screen Shot 2023-03-23 at 8 23 57 PM](https://user-images.githubusercontent.com/1819208/227392768-fec1f467-87f9-4fe9-85e6-f9e88ebd7805.png)
+
+![Screen Shot 2023-03-23 at 8 24 44 PM](https://user-images.githubusercontent.com/1819208/227392854-b0e14177-4bc0-45a4-a15a-7504b328232a.png)
+
+![Screen Shot 2023-03-23 at 8 25 10 PM](https://user-images.githubusercontent.com/1819208/227392890-bb67a359-91d2-4239-8e7f-5fcc92f80488.png)
+
+
 ***
 
 ## Resources 
