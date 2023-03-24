@@ -53,3 +53,4 @@
 * [Apple docs: Set up an introductory offer for an auto-renewable subscription](https://help.apple.com/app-store-connect/#/deve1d49254f)
 * [Ray Wenderlich: Introductory Pricing for iOS: Getting Started](https://www.raywenderlich.com/9307-introductory-pricing-for-ios-getting-started)
 * [RevenueCat: A Guide to iOS Introductory Prices](https://www.revenuecat.com/blog/ios-introductory-prices/)
+* [StackOverflow: How to correctly display the introductory price of an iOS SKProduct?](https://stackoverflow.com/questions/52983778/how-to-correctly-display-the-introductory-price-of-an-ios-skproduct)
