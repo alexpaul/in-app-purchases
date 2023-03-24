@@ -27,6 +27,8 @@
 
 ![Screen Shot 2023-03-23 at 8 20 31 PM](https://user-images.githubusercontent.com/1819208/227392454-dd9089ed-cea4-4625-a6aa-faf86d7c3f6f.png)
 
+![Screen Shot 2023-03-23 at 8 22 09 PM](https://user-images.githubusercontent.com/1819208/227392596-fa9eac8b-4a13-45e9-a326-d61e2380bc93.png)
+
 ***
 
 ## Resources 
