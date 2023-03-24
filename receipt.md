@@ -10,3 +10,4 @@
 
 * [Apple docs: Validating Receipts with the App Store](https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/validating_receipts_with_the_app_store)
 * [Apple docs: Upcoming changes to the App Store receipt signing certificate](https://developer.apple.com/news/?id=ytb7qj0x&utm_campaign=iOS%2BDev%2BWeekly&utm_medium=email&utm_source=iOS%2BDev%2BWeekly%2BIssue%2B591)
+* [Apple docs: App Store receipt data types](https://developer.apple.com/documentation/appstorereceipts/app_store_receipt_data_types)
