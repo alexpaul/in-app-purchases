@@ -70,20 +70,25 @@ print($0.introductoryPrice?.price ?? "") // $29.99
 > `isEligibleForIntroOffer` is available in StoreKit 2 iOS 15+
 
 ```swift
-if let product = products.filter({ $0.introductoryPrice != nil }).first,
-   let subscriptionGroupIdentifier = product.subscriptionGroupIdentifier {
-    print(product.introductoryPrice?.price ?? "") // 29.99
-    Task {
-        if #available(iOS 15.0, *) {
-            if await Product.SubscriptionInfo.isEligibleForIntroOffer(for: subscriptionGroupIdentifier) {
-                print("isEligibleForIntroOffer") // isEligibleForIntroOffer
-            } else {
-                print("not eligible")
-            }
-        } else {
-            // Fallback on earlier versions
-        }
-    }
+func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+  let products = response.products
+
+  if let product = products.filter({ $0.introductoryPrice != nil }).first,
+     let subscriptionGroupIdentifier = product.subscriptionGroupIdentifier {
+      print(product.introductoryPrice?.price ?? "") // 29.99
+      Task {
+          if #available(iOS 15.0, *) {
+              if await Product.SubscriptionInfo.isEligibleForIntroOffer(for: subscriptionGroupIdentifier) {
+                  print("isEligibleForIntroOffer") // isEligibleForIntroOffer
+              } else {
+                  print("not eligible")
+              }
+          } else {
+              // Fallback on earlier versions
+          }
+      }
+
+  }
 }
 ```
 
