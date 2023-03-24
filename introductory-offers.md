@@ -47,9 +47,17 @@
 
 ## Fetching Intro Pricing 
 
-Intro Pricing window is current and not set for the future.
+### Intro Pricing window is current and not set for the future.
 
 ![Screen Shot 2023-03-23 at 9 11 11 PM](https://user-images.githubusercontent.com/1819208/227399115-ff3a52da-9850-417a-94dc-65123aa0cc5e.png)
+
+```swift
+print($0.introductoryPrice?.price ?? "") // $29.99
+```
+
+### Intro Pricing window is in the future
+
+![Screen Shot 2023-03-23 at 9 14 16 PM](https://user-images.githubusercontent.com/1819208/227399706-bb1b9b0a-1efc-4390-8e7f-ab8af2345438.png)
 
 ```swift
 print($0.introductoryPrice?.price ?? "") // $29.99
