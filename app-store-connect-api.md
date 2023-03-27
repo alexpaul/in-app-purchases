@@ -3,6 +3,11 @@
 > The App Store Connect API is for internal development, testing, and reporting purposes
 within your team only, and lets you automate key parts of your own internal workflow.
 
+* TestFlight. Managing beta builds of your app, testers, and groups.
+* Users and Access. Sending invitations for users to join your team, adjusting user
+permissions, and removing users.
+* Reporting. Downloading sales and financial reports for your app.
+
 ![Screen Shot 2023-03-27 at 4 00 02 PM](https://user-images.githubusercontent.com/1819208/228053359-e957a244-2435-4388-869c-df4c34bbd352.png)
 
 ## Resources
