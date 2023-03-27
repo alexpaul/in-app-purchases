@@ -34,6 +34,10 @@ e.g endpoint: `https://api.appstoreconnect.apple.com/v1/apps/{id}/inAppPurchases
 
 You can use [jwt.io](https://jwt.io/)
 
+## Some Useful Endpoints 
+
+* `https://api.appstoreconnect.apple.com/v1/apps`: Get all your apps information.
+
 ## Resources
 
 > App Store Connect API: In-App Purchases and Subscriptions. Manage in-app purchases and auto-renewable subscriptions for your app.
