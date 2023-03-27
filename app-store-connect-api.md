@@ -32,7 +32,7 @@ e.g endpoint: `https://api.appstoreconnect.apple.com/v1/apps/{id}/inAppPurchases
 
 > [Apple docs:](https://developer.apple.com/documentation/appstoreconnectapi/generating_tokens_for_api_requests) JSON Web Token (JWT) is an open standard (RFC 7519) that defines a way to securely transmit information. The App Store Connect API requires JWTs to authorize each API request. You create the token, signing it with the private key you downloaded from App Store Connect.
 
-You can use [](https://jwt.io/)
+You can use [jwt.io](https://jwt.io/)
 
 ## Resources
 
