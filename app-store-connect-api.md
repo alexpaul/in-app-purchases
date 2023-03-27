@@ -32,7 +32,36 @@ e.g endpoint: `https://api.appstoreconnect.apple.com/v1/apps/{id}/inAppPurchases
 
 > [Apple docs:](https://developer.apple.com/documentation/appstoreconnectapi/generating_tokens_for_api_requests) JSON Web Token (JWT) is an open standard (RFC 7519) that defines a way to securely transmit information. The App Store Connect API requires JWTs to authorize each API request. You create the token, signing it with the private key you downloaded from App Store Connect.
 
-You can use [jwt.io](https://jwt.io/)
+You can use [jwt.io](https://jwt.io/) or the following Python script: 
+
+```python
+import datetime
+
+from authlib.jose import jwt
+
+def main():
+    header = {
+        'alg': 'ES256',
+        'kid': 'YOUR ID HERE',
+        'typ': 'JWT'
+    }
+
+    payload = {
+        'iss': 'YOUR ID HERE',
+        'aud': 'appstoreconnect-v1',
+        'exp': int(datetime.datetime.now().timestamp()) + 1200 
+    }
+    # token good for 20 min, as per https://developer.apple.com/go/?id=api-generating-tokens
+
+    key = open('AuthKey-YOURAUTHKEYHERE.p8', 'r').read()
+    token = jwt.encode(header, payload, key).decode('utf-8')
+
+    print(token)
+    # now you can make API requests using this generated token
+
+if __name__ == '__main__':
+    main()
+```
 
 ## Some Useful Endpoints 
 
