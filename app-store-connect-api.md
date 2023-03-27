@@ -63,6 +63,8 @@ if __name__ == '__main__':
     main()
 ```
 
+[Getting started with Python and VSCode](https://code.visualstudio.com/docs/python/python-tutorial#_install-visual-studio-code-and-the-python-extension)
+
 ## Some Useful Endpoints 
 
 * GET `https://api.appstoreconnect.apple.com/v1/apps`: Find and list apps in App Store Connect.
