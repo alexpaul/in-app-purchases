@@ -36,7 +36,9 @@ You can use [jwt.io](https://jwt.io/)
 
 ## Some Useful Endpoints 
 
-* `https://api.appstoreconnect.apple.com/v1/apps`: Get all your apps information.
+* GET `https://api.appstoreconnect.apple.com/v1/apps`: Find and list apps in App Store Connect.
+* GET `https://api.appstoreconnect.apple.com/v1/apps/{id}/inAppPurchasesV2`: Get a list of the in-app purchases for a specific app.
+
 
 ## Resources
 
