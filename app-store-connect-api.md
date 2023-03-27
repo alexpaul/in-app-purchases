@@ -17,3 +17,4 @@ permissions, and removing users.
 * [Apple docs: App Store Connect API - Automate the tasks you perform on the Apple Developer website and in App Store Connect.](https://developer.apple.com/documentation/appstoreconnectapi)
 * [Apple docs: App Store API Collection - Manage all aspects of your app, App Clips, in-app purchases, and customer reviews in the App Store.](https://developer.apple.com/documentation/appstoreconnectapi/app_store)
 * [Apple docs: Creating API Keys for App Store Connect API](https://developer.apple.com/documentation/appstoreconnectapi/creating_api_keys_for_app_store_connect_api)
+* [Apple docs: Generating Tokens for API Requests - Create JSON Web Tokens signed with your private key to authorize API requests.](https://developer.apple.com/documentation/appstoreconnectapi/generating_tokens_for_api_requests)
