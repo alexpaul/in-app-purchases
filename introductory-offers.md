@@ -55,7 +55,7 @@
 print($0.introductoryPrice?.price ?? "") // $29.99
 ```
 
-> Note: Intro price IS reflected in the Apple Payment Sheet.
+> Note: Intro price IS reflected in the Apple Payment Sheet as the intro pricing offer window is current.
 
 ### 2. Intro Pricing window is in the future
 
@@ -65,7 +65,7 @@ print($0.introductoryPrice?.price ?? "") // $29.99
 print($0.introductoryPrice?.price ?? "") // $29.99
 ```
 
-> Note: Intro price IS NOT reflected in the Apple Payment Sheet. Since the intro price is available on the `SKProduct` any UI that depends on using `introductoryPrice == nil` will encounter the pricing is available thus the UI will reflect as so.
+> Note: Intro price IS NOT reflected in the Apple Payment Sheet since the offer is in a future date. Since the intro price is available on the `SKProduct` any UI that depends on using `introductoryPrice == nil` will encounter the pricing is available thus the UI will reflect as so.
 
 ***
 
