@@ -67,6 +67,12 @@ print($0.introductoryPrice?.price ?? "") // $29.99
 
 > Note: Intro price IS NOT reflected in the Apple Payment Sheet since the offer is in a future date. Since the intro price is available on the `SKProduct` any UI that depends on using `introductoryPrice == nil` will encounter the pricing is available thus the UI will reflect as so.
 
+### Resources 
+> If you've set up introductory prices in App Store Connect, the introductory price property will be populated. This property is nil if the product has no introductory price. Before displaying UI that offers the introductory price, you must first determine if the user is eligible to receive it.
+
+* [Apple docs: `introductoryprice`](https://developer.apple.com/documentation/storekit/skproduct/2936878-introductoryprice)
+* [Apple docs: `SKProduct`](https://developer.apple.com/documentation/storekit/skproduct)
+
 ***
 
 ## Determining if the user is eligible for Intro Pricing
