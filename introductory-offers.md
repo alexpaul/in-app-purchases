@@ -47,7 +47,7 @@
 
 ## Fetching Intro Pricing 
 
-### Intro Pricing window is current
+### 1. Intro Pricing window is current
 
 ![Screen Shot 2023-03-23 at 9 11 11 PM](https://user-images.githubusercontent.com/1819208/227399115-ff3a52da-9850-417a-94dc-65123aa0cc5e.png)
 
@@ -57,7 +57,7 @@ print($0.introductoryPrice?.price ?? "") // $29.99
 
 > Note: Intro price IS reflected in the Apple Payment Sheet.
 
-### Intro Pricing window is in the future
+### 2. Intro Pricing window is in the future
 
 ![Screen Shot 2023-03-23 at 9 14 16 PM](https://user-images.githubusercontent.com/1819208/227399706-bb1b9b0a-1efc-4390-8e7f-ab8af2345438.png)
 
@@ -65,7 +65,7 @@ print($0.introductoryPrice?.price ?? "") // $29.99
 print($0.introductoryPrice?.price ?? "") // $29.99
 ```
 
-> Note: Intro price IS NOT reflected in the Apple Payment Sheet.
+> Note: Intro price IS NOT reflected in the Apple Payment Sheet. Since the intro price is available on the `SKProduct` any UI that depends on using `introductoryPrice == nil` will encounter the pricing is available thus the UI will reflect as so.
 
 ***
 
