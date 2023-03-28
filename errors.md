@@ -4,6 +4,7 @@
 
 ## Resources 
 
+* [WWDC 2017: What's New in StoreKit](https://devstreaming-cdn.apple.com/videos/wwdc/2017/303f0u5froddl13/303/303_hd_whats_new_in_storekit.mp4?dl=1)
 * [Developer Forum: In-app Purchase error](https://developer.apple.com/forums/thread/674081)
 * [`SKError`](https://developer.apple.com/documentation/storekit/skerror/code)
 * [StackOverflow: Check if user cancelled SKPaymentTransaction](https://stackoverflow.com/questions/13570970/check-if-user-cancelled-skpaymenttransaction)
