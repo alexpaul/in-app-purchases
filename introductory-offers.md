@@ -121,7 +121,7 @@ Below in the screenshot to enable testing intro pricing, we have created two off
 * A current offer for testing.
 * A second offer with a future date for Production.
 
-![Screen Shot 2023-03-27 at 8 52 19 PM](https://user-images.githubusercontent.com/1819208/228098791-0739918d-4cc3-4905-b627-abb97d1fa028.png)
+![Screen Shot 2023-03-27 at 9 25 35 PM](https://user-images.githubusercontent.com/1819208/228102768-985e9b5b-996c-4c96-8e61-c39b718d2288.png)
 
 
 ***
