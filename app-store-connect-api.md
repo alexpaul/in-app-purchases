@@ -1,7 +1,7 @@
 # App Store Connect API
 
 [The App Store Connect API](https://developer.apple.com/documentation/appstoreconnectapi) is a REST API that enables the automation of actions you take in App Store Connect. Click OpenAPI specification to download the specification file.
-Calls to the API require JSON Web Tokens (JWT) for authorization; you obtain keys to create the tokens from your organization’s App Store Connect account. See Creating API Keys for App Store Connect API to create your keys and tokens.
+Calls to the API require JSON Web Tokens (JWT) for authorization; you obtain keys to create the tokens from your organization’s App Store Connect account. See [Creating API Keys for App Store Connect API](https://developer.apple.com/documentation/appstoreconnectapi/creating_api_keys_for_app_store_connect_api) to create your keys and tokens.
 
 > The App Store Connect API is for internal development, testing, and reporting purposes
 within your team only, and lets you automate key parts of your own internal workflow.
