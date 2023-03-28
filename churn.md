@@ -7,4 +7,5 @@
 
 ## Resources 
 
+* [WWDC 2017: Advanced StoreKit](https://devstreaming-cdn.apple.com/videos/wwdc/2017/305k3ed4sd37at/305/305_hd_advanced_storekit.mp4?dl=1)
 * [Apple docs: Reducing Involuntary Subscriber Churn](https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/subscriptions_and_offers/reducing_involuntary_subscriber_churn)
