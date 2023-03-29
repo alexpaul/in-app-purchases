@@ -12,5 +12,6 @@
 
 ## Resources 
 
+* [WWDC2020: Architecting for subscriptions](https://developer.apple.com/videos/play/wwdc2020/10671)
 * [Apple: Auto-renewable subscriptions](https://developer.apple.com/app-store/subscriptions/)
 * [Offer auto-renewable subscriptions](https://developer.apple.com/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions)
