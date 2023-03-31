@@ -8,6 +8,8 @@
 
 [`showManageSubscriptions(in:)`](https://developer.apple.com/documentation/storekit/appstore/3803198-showmanagesubscriptions): Presents the App Store sheet for managing subscriptions.
 
+![Screen Shot 2023-03-31 at 5 30 25 PM](https://user-images.githubusercontent.com/1819208/229236297-caf16c0b-bf43-4584-9fcc-85c8caa74d46.png)
+
 ***
 
 ## Resources 
