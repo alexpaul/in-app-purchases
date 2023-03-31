@@ -25,6 +25,8 @@
 * Auto-Renewable Subscription: A product that allows users to purchase dynamic content for a set period. This type of subscription renews automatically unless cancelled by the user. Example: Monthly subscription for an app offering a streaming service.
 * Non-Renewing Subscription: A product that allows users to purchase a service with a limited duration. The content of this in-app purchase can be static. This type of subscription does not renew automatically. Example: One-year subscription to a catalog of archived articles.
 
+[Read more](https://developer.apple.com/in-app-purchase/)
+
 ## Product Identifiers and Products
 
 * [Apple Docs: Loading In-App Product Identifiers](https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/loading_in-app_product_identifiers)
