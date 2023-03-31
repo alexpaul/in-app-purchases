@@ -10,7 +10,7 @@
 
 ## Sanbox Testers 
 
-![Screen Shot 2022-02-10 at 6 38 08 AM](https://user-images.githubusercontent.com/1819208/153401510-1ff95031-b883-49e2-8cb1-5057c3f1e681.png)
+Create Sandbox Test account for testing purchasing.
 
 ## Key Files 
 
