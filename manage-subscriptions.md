@@ -16,6 +16,11 @@
 
 ![Screen Shot 2023-03-31 at 8 09 32 PM](https://user-images.githubusercontent.com/1819208/229255055-8be72927-69f4-4765-9966-cac2d150dba6.png)
 
+```swift
+Text(product.localizedTitle) // Display Name from App Store Connect
+Text(product.localizedDescription) // Description from App Store Connect
+```
+
 
 ***
 
