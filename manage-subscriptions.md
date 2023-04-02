@@ -28,7 +28,7 @@ Text(product.localizedDescription) // Description from App Store Connect
 ## Receipt shows user has upgraded to a higher level Subscription tier 
 
 Subscription Tiers:   
-* Level 1: "premiumPro"
+* Level 1: "premiumPlus"
 * Level 2: "premium"
 
 ```
@@ -44,7 +44,7 @@ Subscription Tiers:
             "original_purchase_date_ms" = 1680401091000;
             "original_purchase_date_pst" = "2023-04-01 19:04:51 America/Los_Angeles";
             "original_transaction_id" = 2000000306233571;
-            "product_id" = "dev.alexpaul.#######.premiumPro";
+            "product_id" = "dev.alexpaul.#######.premiumPlus";
             "purchase_date" = "2023-04-02 02:07:06 Etc/GMT";
             "purchase_date_ms" = 1680401226000;
             "purchase_date_pst" = "2023-04-01 19:07:06 America/Los_Angeles";
@@ -81,13 +81,15 @@ Subscription Tiers:
 
 ## Pending Renewal Info
 
+> Note: `pending_renewal_info` after a downgrade. 
+
 ```
 "pending_renewal_info" =     (
             {
-        "auto_renew_product_id" = "dev.alexpaul.######.basic";
+        "auto_renew_product_id" = "dev.alexpaul.######.premium";
         "auto_renew_status" = 1;
         "original_transaction_id" = 2000000306321289;
-        "product_id" = "dev.alexpaul.######.allAccess";
+        "product_id" = "dev.alexpaul.######.premiumPlus";
     }
 );
 ```
