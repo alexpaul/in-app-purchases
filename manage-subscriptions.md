@@ -21,6 +21,55 @@ Text(product.localizedTitle) // Display Name from App Store Connect
 Text(product.localizedDescription) // Description from App Store Connect
 ```
 
+***
+
+## Receipt shows user has upgraded to a higher level tier 
+
+```
+"latest_receipt_info" =     (
+                {
+            "expires_date" = "2023-04-02 02:12:06 Etc/GMT";
+            "expires_date_ms" = 1680401526000;
+            "expires_date_pst" = "2023-04-01 19:12:06 America/Los_Angeles";
+            "in_app_ownership_type" = PURCHASED;
+            "is_in_intro_offer_period" = false;
+            "is_trial_period" = false;
+            "original_purchase_date" = "2023-04-02 02:04:51 Etc/GMT";
+            "original_purchase_date_ms" = 1680401091000;
+            "original_purchase_date_pst" = "2023-04-01 19:04:51 America/Los_Angeles";
+            "original_transaction_id" = 2000000306233571;
+            "product_id" = "dev.alexpaul.#######.allAccess";
+            "purchase_date" = "2023-04-02 02:07:06 Etc/GMT";
+            "purchase_date_ms" = 1680401226000;
+            "purchase_date_pst" = "2023-04-01 19:07:06 America/Los_Angeles";
+            quantity = 1;
+            "subscription_group_identifier" = 1234567
+            "transaction_id" = 2000000306233658;
+            "web_order_line_item_id" = 2000000024363433;
+        },
+                {
+            "expires_date" = "2023-04-02 02:09:44 Etc/GMT";
+            "expires_date_ms" = 1680401384000;
+            "expires_date_pst" = "2023-04-01 19:09:44 America/Los_Angeles";
+            "in_app_ownership_type" = PURCHASED;
+            "is_in_intro_offer_period" = false;
+            "is_trial_period" = false;
+            "is_upgraded" = true;
+            "original_purchase_date" = "2023-04-02 02:04:51 Etc/GMT";
+            "original_purchase_date_ms" = 1680401091000;
+            "original_purchase_date_pst" = "2023-04-01 19:04:51 America/Los_Angeles";
+            "original_transaction_id" = 2000000306233571;
+            "product_id" = "dev.alexpaul.#######.basic";
+            "purchase_date" = "2023-04-02 02:04:44 Etc/GMT";
+            "purchase_date_ms" = 1680401084000;
+            "purchase_date_pst" = "2023-04-01 19:04:44 America/Los_Angeles";
+            quantity = 1;
+            "subscription_group_identifier" = 78910111213;
+            "transaction_id" = 2000000306233571;
+            "web_order_line_item_id" = 2000000024363432;
+        }
+    )
+```
 
 ***
 
