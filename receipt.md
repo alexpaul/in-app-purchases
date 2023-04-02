@@ -8,7 +8,7 @@
 
 ## Receipt 
 
-> [`appStoreReceiptURL`](https://developer.apple.com/documentation/foundation/nsbundle/1407276-appstorereceipturl): The receipt isn’t necessary if you use AppTransaction to validate the app download, or Transaction to validate in-app purchases. Only use the receipt if your app uses the Original API for in-app purchase, or needs the receipt to validate the app download because it can’t use AppTransaction.
+> [`appStoreReceiptURL`](https://developer.apple.com/documentation/foundation/nsbundle/1407276-appstorereceipturl): The receipt isn’t necessary if you use `AppTransaction` to validate the app download, or `Transaction` to validate in-app purchases. Only use the receipt if your app uses the "Original API for in-app purchase", or needs the receipt to validate the app download because it can’t use `AppTransaction`.
 
 ***
 
