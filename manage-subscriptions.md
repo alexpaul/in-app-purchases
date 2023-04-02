@@ -47,7 +47,7 @@ Subscription Tiers:
             "purchase_date_ms" = 1680401226000;
             "purchase_date_pst" = "2023-04-01 19:07:06 America/Los_Angeles";
             quantity = 1;
-            "subscription_group_identifier" = 1234567
+            "subscription_group_identifier" = 123456789
             "transaction_id" = 2000000306233658;
             "web_order_line_item_id" = 2000000024363433;
         },
@@ -68,7 +68,7 @@ Subscription Tiers:
             "purchase_date_ms" = 1680401084000;
             "purchase_date_pst" = "2023-04-01 19:04:44 America/Los_Angeles";
             quantity = 1;
-            "subscription_group_identifier" = 78910111213;
+            "subscription_group_identifier" = 123456789;
             "transaction_id" = 2000000306233571;
             "web_order_line_item_id" = 2000000024363432;
         }
