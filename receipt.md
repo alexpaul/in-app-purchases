@@ -1,4 +1,4 @@
-# App Store Receipts
+# App Store Receipt
 
 ## Receipt Validation in iOS 7+
 
