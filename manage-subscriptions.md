@@ -26,7 +26,7 @@ Text(product.localizedDescription) // Description from App Store Connect
 ## Receipt shows user has upgraded to a higher level Subscription tier 
 
 Subscription Tiers:   
-* Level 1: "preminumPro"
+* Level 1: "premiumPro"
 * Level 2: "premium"
 
 ```
