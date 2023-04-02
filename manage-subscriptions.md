@@ -23,7 +23,7 @@ Text(product.localizedDescription) // Description from App Store Connect
 
 ***
 
-## Receipt shows user has upgraded to a higher level tier 
+## Receipt shows user has upgraded to a higher level Subscription tier 
 
 ```
 "latest_receipt_info" =     (
