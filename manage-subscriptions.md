@@ -79,6 +79,21 @@ Subscription Tiers:
 
 ***
 
+## Pending Renewal Info
+
+```
+"pending_renewal_info" =     (
+            {
+        "auto_renew_product_id" = "dev.alexpaul.######.basic";
+        "auto_renew_status" = 1;
+        "original_transaction_id" = 2000000306321289;
+        "product_id" = "dev.alexpaul.######.allAccess";
+    }
+);
+```
+
+***
+
 ## Resources 
 
 * [WWDC2020: Architecting for subscriptions](https://developer.apple.com/videos/play/wwdc2020/10671) ⭐️
