@@ -38,7 +38,7 @@ Text(product.localizedDescription) // Description from App Store Connect
             "original_purchase_date_ms" = 1680401091000;
             "original_purchase_date_pst" = "2023-04-01 19:04:51 America/Los_Angeles";
             "original_transaction_id" = 2000000306233571;
-            "product_id" = "dev.alexpaul.#######.allAccess";
+            "product_id" = "dev.alexpaul.#######.premiumPro";
             "purchase_date" = "2023-04-02 02:07:06 Etc/GMT";
             "purchase_date_ms" = 1680401226000;
             "purchase_date_pst" = "2023-04-01 19:07:06 America/Los_Angeles";
@@ -59,7 +59,7 @@ Text(product.localizedDescription) // Description from App Store Connect
             "original_purchase_date_ms" = 1680401091000;
             "original_purchase_date_pst" = "2023-04-01 19:04:51 America/Los_Angeles";
             "original_transaction_id" = 2000000306233571;
-            "product_id" = "dev.alexpaul.#######.basic";
+            "product_id" = "dev.alexpaul.#######.premium";
             "purchase_date" = "2023-04-02 02:04:44 Etc/GMT";
             "purchase_date_ms" = 1680401084000;
             "purchase_date_pst" = "2023-04-01 19:04:44 America/Los_Angeles";
