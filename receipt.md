@@ -4,6 +4,14 @@
 
 > [RevernueCat](https://www.revenuecat.com/blog/app-store-receipt-file-example/): Starting with iOS 7, Apple introduced an alternative method for accessing a user’s IAP history. Previously developers had to rely on the SKPaymentQueue as the source of truth, listening to transactions and keeping track. With iOS 7, Apple introduced NSBundle.appStoreReceiptURL that gave developers a disk location they could find this new “receipt” file. The intention was to have developers use this file as the source of truth for IAPs, rather than the StoreKit purchase queue which can be difficult to build around.
 
+***
+
+## Receipt 
+
+> [`appStoreReceiptURL`](https://developer.apple.com/documentation/foundation/nsbundle/1407276-appstorereceipturl): The receipt isn’t necessary if you use AppTransaction to validate the app download, or Transaction to validate in-app purchases. Only use the receipt if your app uses the Original API for in-app purchase, or needs the receipt to validate the app download because it can’t use AppTransaction.
+
+***
+
 ## Resources
 
 * [Apple docs: `appStoreReceiptURL`](https://developer.apple.com/documentation/foundation/nsbundle/1407276-appstorereceipturl)
