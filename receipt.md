@@ -16,6 +16,9 @@
 
 > Subscription Expiration Date. This key is only present for auto-renewable subscription receipts. Use this value to identify the date when the subscription will renew or expire, to determine if a customer should have access to content or service. After validating the latest receipt, if the subscription expiration date for the latest renewal transaction is a past date, it is safe to assume that the subscription has expired.
 
+* [`latest_receipt_info`](https://developer.apple.com/documentation/appstorereceipts/responsebody/latest_receipt_info): An array that contains all in-app purchase transactions.
+* [`pending_renewal_info`](https://developer.apple.com/documentation/appstorereceipts/responsebody/pending_renewal_info): An array of elements that refers to open or failed auto-renewable subscription renewals.
+
 ***
 
 ## Resources
