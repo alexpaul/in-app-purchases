@@ -12,6 +12,12 @@
 
 ***
 
+## Receipt Fields
+
+> Subscription Expiration Date. This key is only present for auto-renewable subscription receipts. Use this value to identify the date when the subscription will renew or expire, to determine if a customer should have access to content or service. After validating the latest receipt, if the subscription expiration date for the latest renewal transaction is a past date, it is safe to assume that the subscription has expired.
+
+***
+
 ## Resources
 
 * [Apple docs: `appStoreReceiptURL`](https://developer.apple.com/documentation/foundation/nsbundle/1407276-appstorereceipturl)
