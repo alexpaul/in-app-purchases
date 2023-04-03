@@ -60,7 +60,10 @@ Subscription Tiers:
             "in_app_ownership_type" = PURCHASED;
             "is_in_intro_offer_period" = false;
             "is_trial_period" = false;
+            
+            // Here in the receipt we can see that the user has upgraded from "premium" to "premiumPlus"
             "is_upgraded" = true;
+            
             "original_purchase_date" = "2023-04-02 02:04:51 Etc/GMT";
             "original_purchase_date_ms" = 1680401091000;
             "original_purchase_date_pst" = "2023-04-01 19:04:51 America/Los_Angeles";
