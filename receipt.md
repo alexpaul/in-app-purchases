@@ -20,6 +20,7 @@
 
 ## Resources
 
+* [Apple docs: App Store Receipts](https://developer.apple.com/documentation/appstorereceipts)
 * [Apple docs: `appStoreReceiptURL`](https://developer.apple.com/documentation/foundation/nsbundle/1407276-appstorereceipturl)
 * [Apple docs: Receipt Fields](https://developer.apple.com/library/archive/releasenotes/General/ValidateAppStoreReceipt/Chapters/ReceiptFields.html#//apple_ref/doc/uid/TP40010573-CH106-SW1)
 * [Apple docs: Validating Receipts with the App Store](https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/validating_receipts_with_the_app_store)
