@@ -119,7 +119,9 @@ func productsRequest(_ request: SKProductsRequest, didReceive response: SKProduc
 
 Below in the screenshot to enable testing intro pricing, we have created two offers. 
 * A current offer for testing.
+  * Note: only the end date can be changed on a current infro offer.
 * A second offer with a future date for Production.
+  * All values are editable on future intro offers.
 
 ![Screen Shot 2023-03-27 at 9 25 35 PM](https://user-images.githubusercontent.com/1819208/228102768-985e9b5b-996c-4c96-8e61-c39b718d2288.png)
 
