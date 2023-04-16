@@ -5,11 +5,6 @@ The following resources are key to understanding In-app Purchase:
 * [Choosing a StoreKit API](https://developer.apple.com/documentation/storekit/in-app_purchase/choosing_a_storekit_api_for_in-app_purchases)
 * [Auto-renewable subscriptions](https://developer.apple.com/app-store/subscriptions/)
 
-## Product Identifiers and Products
-
-* [Apple Docs: Loading In-App Product Identifiers](https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/loading_in-app_product_identifiers)
-* [Apple Docs: Fetching Product Information from the App Store](https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/fetching_product_information_from_the_app_store)
-
 ## Project Demos 
 
 * [My Repo: FakeGame demo app uses StoreKit to implement in-app purchases (StoreKit)](https://github.com/alexpaul/In-App-Purchases/tree/main/FakeGame)
