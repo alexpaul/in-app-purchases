@@ -5,9 +5,6 @@ The following resources are key to understanding In-app Purchase:
 * [Choosing a StoreKit API](https://developer.apple.com/documentation/storekit/in-app_purchase/choosing_a_storekit_api_for_in-app_purchases)
 * [Auto-renewable subscriptions](https://developer.apple.com/app-store/subscriptions/)
 
-## Other Resources 
-
-* [Apple Docs: Validating Receipts with the App Store](https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/validating_receipts_with_the_app_store)
 
 ## Troubleshooting 
 
