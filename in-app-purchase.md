@@ -16,3 +16,5 @@
 ## Resources 
 
 * [Apple Docs: In-App Purchase](https://developer.apple.com/in-app-purchase/)
+* [Apple Store Connect: Workflow for configuring in-app purchases](https://help.apple.com/app-store-connect/#/devb57be10e7)
+
