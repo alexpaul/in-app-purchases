@@ -5,8 +5,3 @@ The following resources are key to understanding In-app Purchase:
 * [Choosing a StoreKit API](https://developer.apple.com/documentation/storekit/in-app_purchase/choosing_a_storekit_api_for_in-app_purchases)
 * [Auto-renewable subscriptions](https://developer.apple.com/app-store/subscriptions/)
 
-
-## Troubleshooting 
-
-* [Troubleshooing Invalid Product Ids](https://developer.apple.com/library/archive/technotes/tn2413/_index.html#//apple_ref/doc/uid/DTS40016228-CH1-TROUBLESHOOTING-WHY_ARE_MY_PRODUCT_IDENTIFIERS_BEING_RETURNED_IN_THE_INVALIDPRODUCTIDENTIFIERS_ARRAY_)
-
