@@ -8,7 +8,6 @@ The following resources are key to understanding In-app Purchase:
 ## Other Resources 
 
 * [Apple Docs: Validating Receipts with the App Store](https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/validating_receipts_with_the_app_store)
-* [Apple Store Connect: Workflow for configuring in-app purchases](https://help.apple.com/app-store-connect/#/devb57be10e7)
 
 ## Troubleshooting 
 
