@@ -37,12 +37,12 @@ Some benefits:
 > By syncing the StoreKit Config file you will have full access to testing the Products and Subscriptons on App Store Connect.
 
 * In Xcode navigate to File >> New >> File. 
-* Search for "StoreKit", the view should not be filtered with the "StoreKit Configuration File" option. 
+* Search for "StoreKit", the view should now be filtered with the "StoreKit Configuration File" option. 
 * Select "StoreKit Configuration File" and toggle on the "Sync this file with an app in App Store Connect" option. 
-* After Xcode determines your Apple account credentials for the "Team" and "App" you can select "Next".
+* After Xcode determines your Apple Account credentials for your "Team" and "App" you can select "Next".
 * At this point you will now have access to a StoreKit Configuration file that is synced with App Store Connect.
-* In this Config file you will have access to all the Products and Subscriptions from App Store Connect for testing. 
-* Note: The Products and Subscription are read only. To make changes to the Config file you have to update App Store Connect and sync the Config file in Xcode.
+* In this StoreKit Config file you will have access to all the Products and Subscriptions from App Store Connect for testing. 
+* Note: The Products and Subscription are read only. To make changes to the StoreKit Config file you have to update App Store Connect and sync the Config file in Xcode.
 
 ## Resources
 
