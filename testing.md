@@ -1,5 +1,15 @@
 # Testing In-App Purchases
 
+## Contents 
+
+1. [Introduction](#introduction)
+2. [Testing international currencies](#testing-international-currencies)
+3. [StoreKit Testing in Xcode](#storekit-testing-in-xcode)
+4. [Sync a StoreKit Configuration file with App Store Connect](#sync-a-storekit-configuration-file-with-app-store-connect)
+5. [Resources](#resources)
+
+## Introduction
+
 > There are 3 distinct testing environments: Production (App Store), TestFlight (Production Sandbox), and Sandbox (Developer Builds). Each behaves slightly differently and needs to be tested independently.
 
 > StoreKit testing in Xcode is a local test environment where you can test in-app purchases without connecting to App Store servers. Set up in-app purchases in a StoreKit configuration file then add it to your Xcode project. After you enable the configuration file, the test environment uses this local data when your app calls StoreKit APIs.
@@ -32,7 +42,7 @@ Some benefits:
 
 ***
 
-## Creating a StoreKit Configuration file in Xcode that's synced with App Store Connect
+## Sync a StoreKit Configuration file with App Store Connect
 
 > By syncing the StoreKit Config file you will have full access to testing the Products and Subscriptons on App Store Connect.
 
