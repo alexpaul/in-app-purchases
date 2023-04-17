@@ -44,6 +44,8 @@ Some benefits:
 * In this StoreKit Config file you will have access to all the Products and Subscriptions from App Store Connect for testing. 
 * Note: The Products and Subscription are read only. To make changes to the StoreKit Config file you have to update App Store Connect and sync the Config file in Xcode.
 
+[Resource](https://developer.apple.com/videos/play/wwdc2022/10039/)
+
 ## Resources
 
 * [Apple docs: Testing In-App Purchases with Sandbox
