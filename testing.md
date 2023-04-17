@@ -22,9 +22,13 @@
 ## StoreKit Testing in Xcode 
 
 Some benefits: 
-* Syncing StoreKit Configuration file with App Store Connect's Products and Subscriptions. You will have full exposure to all your Products in Xcode. This feature was introduced in Xcode 14. 
-* The ability to test purchasing in the simulator or device without the need to use a Sanbbox acccount.
-* Manage StoreKit transactions via the debug menu bar.
+* Creating a local StoreKit Configuration file in Xcode.
+  * The Products in the local config file can be distinct from those on App Store Connect.
+* Syncing a StoreKit Configuration file with App Store Connect.
+  * After syncing the StorKit Configurgation file with App Store Connect you will have access to the ASC Products and Subscriptions.
+  * This feature was introduced in Xcode 14. 
+* The ability to test purchasing in the simulator or device without needing a Sandbox acccount.
+* Manage StoreKit transactions via the Debug menu bar.
 
 ***
 
