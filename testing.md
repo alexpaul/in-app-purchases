@@ -23,7 +23,7 @@
 
 Some benefits: 
 * Syncing StoreKit Configuration file with App Store Connect's Products and Subscriptions. You will have full exposure to all your Products in Xcode. This feature was introduced in Xcode 14. 
-* Having a Sandbox account is not a requirement for testing in the simulator with StoreKit testing in Xcode.
+* The ability to test purchasing in the simulator or device without the need to use a Sanbbox acccount.
 * Manage StoreKit transactions via the debug menu bar.
 
 ***
