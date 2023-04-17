@@ -54,8 +54,3 @@ Some benefits:
 * [Apple docs: Testing an Auto-Renewable Subscription](https://developer.apple.com/documentation/storekit/in-app_purchase/testing_in-app_purchases_with_sandbox/testing_an_auto-renewable_subscription)
 * [What's new in StoreKit testing - WWDC22](https://developer.apple.com/videos/play/wwdc2022/10039/)
 
-***
-
-## Demo App
-
-* [InAppPurchaseTesting](https://github.com/alexpaul/InAppPurchaseTesting)
