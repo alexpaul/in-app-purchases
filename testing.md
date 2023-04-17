@@ -32,7 +32,7 @@ Some benefits:
 
 ***
 
-## Creating a Synced App Store Connect StoreKit Configuration file in Xcode
+## Creating a StoreKit Configuration file in Xcode that's synced with App Store Connect
 
 > By syncing the StoreKit Config file you will have full access to testing the Products and Subscriptons on App Store Connect.
 
