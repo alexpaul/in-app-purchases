@@ -1,13 +1,13 @@
 # Subscriber Journey 
 
-* Retention: `active`, auto-renewal is off.
+* Retention: `active`, auto renew is off.
   * Possible action: Resubscribe UI can be presented
 * Billing Retry:  `expired`, expired in billing retry. 
-  * Possible action: Banner to deep-link to update their payment information in Subscription management
+  * Possible action: Bottom banner and CTA that deep-links the user to update their payment information in Subscription management
 * Grace Period: `expired`, expired in grace period
-  * Possible action: a presented sheet showing the countdown to subscription days remaining, and a link to Subscription management
+  * Possible action: a presented sheet showing the countdown to subscription days remaining, and CTA to Subscription management
 * Winback: `expired`, expired from billing
-  * Possible action: Use a Push Notification merchandising a current winback marketing offer. Deep link from Push Notification to the landing page.
+  * Possible action: Use Push Notification to merchandise a current winback marketing offer. Deep-link from the Push Notification to the Product page.
 * Upgrade: `active`, auto renew on. User has made multiple monthly purchases. 
   * Possible action: Discount on yearly subscription.
 
