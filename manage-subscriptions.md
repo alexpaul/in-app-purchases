@@ -8,7 +8,7 @@
 
 [`showManageSubscriptions(in:)`](https://developer.apple.com/documentation/storekit/appstore/3803198-showmanagesubscriptions): Presents the App Store sheet for managing subscriptions.
 
-## Creating Auto-Renewal Subscripitons 
+## 1. Creating Auto-Renewal Subscripitons 
 
 ![Screen Shot 2023-03-31 at 5 30 25 PM](https://user-images.githubusercontent.com/1819208/229236297-caf16c0b-bf43-4584-9fcc-85c8caa74d46.png)
 
@@ -25,7 +25,7 @@ Text(product.localizedDescription) // Description from App Store Connect
 
 ***
 
-## Receipt shows user has upgraded to a higher level Subscription tier 
+## 2. Receipt shows user has upgraded to a higher level Subscription tier 
 
 Subscription Tiers:   
 * Level 1: "premiumPlus"
@@ -82,7 +82,7 @@ Subscription Tiers:
 
 ***
 
-## Pending Renewal Info
+## 3. Pending Renewal Info
 
 > Note: `pending_renewal_info` after a downgrade. 
 
@@ -99,9 +99,13 @@ Subscription Tiers:
 
 ***
 
-## Demo App
+## 4. Demo App
 
 https://user-images.githubusercontent.com/1819208/229941952-eedac8c3-d201-4bd2-a864-954685406358.mov
+
+## 5. Price Increases 
+
+> [Manage pricing for auto-renewable subscriptions](https://developer.apple.com/help/app-store-connect/manage-subscriptions/manage-pricing-for-auto-renewable-subscriptions)Increases in auto-renewable subscription prices result in either a notice to active subscribers or a request for consent, based on certain criteria below. Subscribers on introductory or promotional price subscriptions, including free trials and paid offers, will renew for at least one more billing period at the price that was displayed when they subscribed, to ensure their notice or request for consent for the new price is sent at least 30 days in advance. If a subscriber doesn’t consent before the first renewal at the higher price, their subscription will expire at the end of the last billing cycle at the former price.
 
 ***
 
