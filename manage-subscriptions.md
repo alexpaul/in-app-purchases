@@ -105,7 +105,7 @@ https://user-images.githubusercontent.com/1819208/229941952-eedac8c3-d201-4bd2-a
 
 ## 5. Price Increases 
 
-> [Manage pricing for auto-renewable subscriptions](https://developer.apple.com/help/app-store-connect/manage-subscriptions/manage-pricing-for-auto-renewable-subscriptions)Increases in auto-renewable subscription prices result in either a notice to active subscribers or a request for consent, based on certain criteria below. Subscribers on introductory or promotional price subscriptions, including free trials and paid offers, will renew for at least one more billing period at the price that was displayed when they subscribed, to ensure their notice or request for consent for the new price is sent at least 30 days in advance. If a subscriber doesn’t consent before the first renewal at the higher price, their subscription will expire at the end of the last billing cycle at the former price.
+> [Manage pricing for auto-renewable subscriptions](https://developer.apple.com/help/app-store-connect/manage-subscriptions/manage-pricing-for-auto-renewable-subscriptions) Increases in auto-renewable subscription prices result in either a notice to active subscribers or a request for consent, based on certain criteria below. Subscribers on introductory or promotional price subscriptions, including free trials and paid offers, will renew for at least one more billing period at the price that was displayed when they subscribed, to ensure their notice or request for consent for the new price is sent at least 30 days in advance. If a subscriber doesn’t consent before the first renewal at the higher price, their subscription will expire at the end of the last billing cycle at the former price.
 
 ***
 
