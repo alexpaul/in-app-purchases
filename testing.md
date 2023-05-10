@@ -62,7 +62,7 @@ Some benefits:
 * Log in [developer.apple/account.com](https://developer.apple.com/account)
 * Click on [Users and Access](https://appstoreconnect.apple.com/access/users)
 * Click on [Sandbox Tester](https://appstoreconnect.apple.com/access/users/sandbox)
-* Click on "Edit"
+* Click on "Edit" and select the Sandbox accounts you want to clear.
 
 ### Clear Purchase History
 ![clear-purchase-history](https://github.com/alexpaul/in-app-purchases/assets/1819208/33b146c4-0c23-44f1-b886-ee9c8ce6bc9d)
