@@ -56,6 +56,19 @@ Some benefits:
 
 [Resource](https://developer.apple.com/videos/play/wwdc2022/10039/)
 
+## Clear Sandbox Purchases 
+
+* Log in [developer.apple/account.com](https://developer.apple.com/account)
+* Click on [Users and Access](https://appstoreconnect.apple.com/access/users)
+* Click on [Sandbox Tester](https://appstoreconnect.apple.com/access/users/sandbox)
+* Click on "Edit"
+
+Clear Purchase History
+![clear-purchase-history](https://github.com/alexpaul/in-app-purchases/assets/1819208/33b146c4-0c23-44f1-b886-ee9c8ce6bc9d)
+
+Confirmation Dialog
+![confirmation](https://github.com/alexpaul/in-app-purchases/assets/1819208/3a278db9-7fe2-498b-bd49-eb5fc73a2f24)
+
 ## Resources
 
 * [Apple docs: Testing In-App Purchases with Sandbox
