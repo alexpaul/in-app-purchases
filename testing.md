@@ -6,7 +6,8 @@
 2. [Testing international currencies](#testing-international-currencies)
 3. [StoreKit Testing in Xcode](#storekit-testing-in-xcode)
 4. [Sync a StoreKit Configuration file with App Store Connect](#sync-a-storekit-configuration-file-with-app-store-connect)
-5. [Resources](#resources)
+5. [Clear Sandbox Purchases](#clear-sandbox-purchases)
+6. [Resources](#resources)
 
 ## Introduction
 
@@ -63,10 +64,10 @@ Some benefits:
 * Click on [Sandbox Tester](https://appstoreconnect.apple.com/access/users/sandbox)
 * Click on "Edit"
 
-Clear Purchase History
+### Clear Purchase History
 ![clear-purchase-history](https://github.com/alexpaul/in-app-purchases/assets/1819208/33b146c4-0c23-44f1-b886-ee9c8ce6bc9d)
 
-Confirmation Dialog
+### Confirmation Dialog
 ![confirmation](https://github.com/alexpaul/in-app-purchases/assets/1819208/3a278db9-7fe2-498b-bd49-eb5fc73a2f24)
 
 ## Resources
