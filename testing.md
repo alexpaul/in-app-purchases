@@ -55,7 +55,15 @@ Some benefits:
 * In this StoreKit Config file you will have access to all the Products and Subscriptions from App Store Connect for testing. 
 * Note: The Products and Subscription are read only. To make changes to the StoreKit Config file you have to update App Store Connect and sync the Config file in Xcode.
 
-[Resource](https://developer.apple.com/videos/play/wwdc2022/10039/)
+To modify a synced StoreKit configuration file you need to convert it into a local StoreKit configuaration: 
+* Select the synced StoreKit file.
+* Navigate to the Xcode menu -> Editor and select "Convert to Local StoreKit Configuration".
+* A prompt will display that this file will no longer be able to be synced.
+
+![convert-to-local-storekit](https://github.com/alexpaul/in-app-purchases/assets/1819208/b9c2f5c5-4de5-4f4b-aadf-e694995a93dc)
+
+Resources  
+[What's new in StoreKit testing - WWDC22](https://developer.apple.com/videos/play/wwdc2022/10039/)
 
 ## Clear Sandbox Purchases 
 
