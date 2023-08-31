@@ -63,8 +63,8 @@ To modify a synced StoreKit configuration file you need to convert it into a loc
 ![convert-to-local-storekit](https://github.com/alexpaul/in-app-purchases/assets/1819208/b9c2f5c5-4de5-4f4b-aadf-e694995a93dc)
 
 Troubleshooting:  
-* Too many requests (429) when attempting to sync with App Store Connect.
-* Resolution: Unfortunately here we will have to create a local StoreKit file.
+* Too many requests (429) when attempting to sync with App Store Connect.  
+* Resolution: Unfortunately here we will have to create a local StoreKit file.  
 ![Screenshot 2023-08-31 at 12 09 08 PM](https://github.com/alexpaul/in-app-purchases/assets/1819208/edfe305e-8088-4a1b-87b2-6dad3af4d89a)
 
 Resources  
