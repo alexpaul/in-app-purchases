@@ -24,7 +24,7 @@
 
 ## Testing international currencies 
 
-* Create a Sandbox account and select the Region you're interested in e.g India.
+* Create a Sandbox account and select the Region you're interested in e.g. India.
 * Navigate to your UI showing the Store Products. 
 * You should now observe that the Product's currency is local to that of the Sandbox account.
 
@@ -36,9 +36,9 @@ Some benefits:
 * Creating a local StoreKit Configuration file in Xcode.
   * The Products in the local config file can be distinct from those on App Store Connect.
 * Syncing a StoreKit Configuration file with App Store Connect.
-  * After syncing the StorKit Configurgation file with App Store Connect you will have access to the ASC Products and Subscriptions.
+  * After syncing the StorKit Configuration file with App Store Connect you will have access to the ASC Products and Subscriptions.
   * This feature was introduced in Xcode 14. 
-* The ability to test purchasing in the simulator or device without needing a Sandbox acccount.
+* The ability to test purchasing in the simulator or device without needing a Sandbox account.
 * Manage StoreKit transactions via the Debug menu bar.
 
 ***
@@ -53,14 +53,18 @@ Some benefits:
 * After Xcode determines your Apple Account credentials for your "Team" and "App" you can select "Next".
 * At this point you will now have access to a StoreKit Configuration file that is synced with App Store Connect.
 * In this StoreKit Config file you will have access to all the Products and Subscriptions from App Store Connect for testing. 
-* Note: The Products and Subscription are read only. To make changes to the StoreKit Config file you have to update App Store Connect and sync the Config file in Xcode.
+* Note: The Products and Subscription are read-only. To make changes to the StoreKit Config file you have to update App Store Connect and sync the Config file in Xcode.
 
-To modify a synced StoreKit configuration file you need to convert it into a local StoreKit configuaration: 
+To modify a synced StoreKit configuration file you need to convert it into a local StoreKit configuration: 
 * Select the synced StoreKit file.
 * Navigate to the Xcode menu -> Editor and select "Convert to Local StoreKit Configuration".
 * A prompt will display that this file will no longer be able to be synced.
 
 ![convert-to-local-storekit](https://github.com/alexpaul/in-app-purchases/assets/1819208/b9c2f5c5-4de5-4f4b-aadf-e694995a93dc)
+
+Troubleshooting:  
+* Too many requests (429) when attempting to sync with App Store Connect.  
+![Screenshot 2023-08-31 at 12 09 08 PM](https://github.com/alexpaul/in-app-purchases/assets/1819208/edfe305e-8088-4a1b-87b2-6dad3af4d89a)
 
 Resources  
 [What's new in StoreKit testing - WWDC22](https://developer.apple.com/videos/play/wwdc2022/10039/)
