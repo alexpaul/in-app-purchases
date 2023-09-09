@@ -72,6 +72,8 @@ Resources
 * [Apple Article - Setting up StoreKit Testing in Xcode](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode/)  
 * [What's new in StoreKit testing - WWDC22](https://developer.apple.com/videos/play/wwdc2022/10039/)  
 
+***
+
 ## Clear Sandbox Purchases 
 
 * Log in [developer.apple/account.com](https://developer.apple.com/account)
@@ -85,6 +87,8 @@ Resources
 ### Confirmation Dialog
 ![confirmation](https://github.com/alexpaul/in-app-purchases/assets/1819208/3a278db9-7fe2-498b-bd49-eb5fc73a2f24)
 
+***
+
 ## Resources
 
 * [Apple docs: Testing In-App Purchases with Sandbox
@@ -94,4 +98,6 @@ Resources
 * [RevenueCat: The Ultimate Guide to iOS Subscription Testing](https://www.revenuecat.com/blog/the-ultimate-guide-to-subscription-testing-on-ios#sandbox) ⭐️
 * [Apple docs: Testing an Auto-Renewable Subscription](https://developer.apple.com/documentation/storekit/in-app_purchase/testing_in-app_purchases_with_sandbox/testing_an_auto-renewable_subscription)
 * [What's new in StoreKit testing - WWDC22](https://developer.apple.com/videos/play/wwdc2022/10039/)
+* [Apple Article - Setting up StoreKit Testing in Xcode](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode/)  
+
 
