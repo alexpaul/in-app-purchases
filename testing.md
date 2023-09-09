@@ -69,7 +69,8 @@ Troubleshooting:
 ![Screenshot 2023-08-31 at 12 09 08 PM](https://github.com/alexpaul/in-app-purchases/assets/1819208/edfe305e-8088-4a1b-87b2-6dad3af4d89a)
 
 Resources  
-[What's new in StoreKit testing - WWDC22](https://developer.apple.com/videos/play/wwdc2022/10039/)
+* [Apple Article - Setting up StoreKit Testing in Xcode](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode/)  
+* [What's new in StoreKit testing - WWDC22](https://developer.apple.com/videos/play/wwdc2022/10039/)  
 
 ## Clear Sandbox Purchases 
 
