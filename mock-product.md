@@ -28,14 +28,11 @@ struct ProductSubscriptionPeriod {
     let unit: Product.PeriodUnit
 }
 
-extension Product {
+extension ProductSubscriptionPeriod {
     var periodDescription: (numberOfUnits: Int, period: String) {
-        guard let introPrice = introductoryPrice else {
-            return (-1,"")
-        }
-        let plural = introPrice.subscriptionPeriod.numberOfUnits > 1
+        let plural = numberOfUnits > 1
         let period: String
-        switch introPrice.subscriptionPeriod.unit {
+        switch unit {
         case .day:
             period = plural ? "days" : "day"
         case .week:
@@ -45,7 +42,7 @@ extension Product {
         case .year:
             period = plural ? "years" : "year"
         }
-        return (introPrice.subscriptionPeriod.numberOfUnits, period)
+        return (numberOfUnits, period)
     }
 }
 
@@ -76,6 +73,18 @@ let monthlyProduct = Product(
     )
 )
 
-print("\(monthlyProduct.periodDescription.numberOfUnits) \(monthlyProduct.periodDescription.period)")
-// 2 weeks
+if let introPrice = monthlyProduct.introductoryPrice {
+    print("\(introPrice.subscriptionPeriod.periodDescription.numberOfUnits) \(introPrice.subscriptionPeriod.periodDescription.period)")
+    // 2 weeks
+}
+
+if let subscriptionPeriod = monthlyProduct.subscriptionPeriod {
+    print("\(subscriptionPeriod.periodDescription.numberOfUnits) \(subscriptionPeriod.periodDescription.period)")
+    // 1 month
+}
+
+if let subscriptionPeriod = yearlyProduct.subscriptionPeriod {
+    print("\(subscriptionPeriod.periodDescription.numberOfUnits) \(subscriptionPeriod.periodDescription.period)")
+    // 1 year
+}
 ```
