@@ -35,13 +35,13 @@ extension ProductSubscriptionPeriod {
         let plural = numberOfUnits > 1
         let period: String
         switch unit {
-        case .day:
+        case .day: // 0 
             period = plural ? "days" : "day"
-        case .week:
+        case .week: // 1
             period = plural ? "weeks" : "week"
-        case .month:
+        case .month: // 2
             period = plural ? "months" : "month"
-        case .year:
+        case .year: // 3
             period = plural ? "years" : "year"
         }
         return (numberOfUnits, period)
