@@ -20,9 +20,16 @@ struct Product {
 }
 
 struct ProductDiscount {
+    enum PaymentMode {
+        case payAsYouGo
+        case payUpFront
+        case freeTrial
+    }
+
     let price: NSDecimalNumber
     let numberOfPeriods: Int
     let subscriptionPeriod: ProductSubscriptionPeriod
+    let paymentMode: PaymentMode
 }
 
 struct ProductSubscriptionPeriod {
@@ -31,20 +38,53 @@ struct ProductSubscriptionPeriod {
 }
 
 extension ProductSubscriptionPeriod {
-    var periodDescription: (numberOfUnits: Int, period: String) {
+    var periodDescription: (duration: Int, unit: String) {
         let plural = numberOfUnits > 1
-        let period: String
+        let unitDescription: String
         switch unit {
-        case .day: // 0 
-            period = plural ? "days" : "day"
+        case .day: // 0
+            unitDescription = plural ? "days" : "day"
         case .week: // 1
-            period = plural ? "weeks" : "week"
+            unitDescription = plural ? "weeks" : "week"
         case .month: // 2
-            period = plural ? "months" : "month"
+            unitDescription = plural ? "months" : "month"
         case .year: // 3
-            period = plural ? "years" : "year"
+            unitDescription = plural ? "years" : "year"
         }
-        return (numberOfUnits, period)
+        return (numberOfUnits, unitDescription)
+    }
+}
+
+extension ProductDiscount {
+    /// `freeTrial` uses `numberOfUnits`
+    /// `payAsYouGo` uses `numberOfPeriods`
+    var offerPeriodDescription: (duration: Int?, unit: String?) {
+        var plural = false
+        var unit = "unknown-unit"
+        var duration = 0
+
+        switch paymentMode {
+        case .payAsYouGo:
+            duration = numberOfPeriods
+            plural = numberOfPeriods > 1
+        case .freeTrial:
+            duration = subscriptionPeriod.numberOfUnits
+            plural = subscriptionPeriod.numberOfUnits > 1
+        default:
+            break
+        }
+
+        switch subscriptionPeriod.unit {
+        case .day:
+            unit = plural ? "days" : "day"
+        case .week:
+            unit = plural ? "weeks" : "week"
+        case .month:
+            unit = plural ? "months" : "month"
+        case .year:
+            unit = plural ? "years" : "year"
+        }
+        return (duration, unit)
     }
 }
 
@@ -63,11 +103,12 @@ let monthlyProduct = Product(
     productIdentifier: "dev.alexpaul.monthly.4.99",
     introductoryPrice: ProductDiscount(
         price: 0.00,
-        numberOfPeriods: 1,
+        numberOfPeriods: 6,
         subscriptionPeriod: ProductSubscriptionPeriod(
-            numberOfUnits: 2,
-            unit: .week
-        )
+            numberOfUnits: 1,
+            unit: .month
+        ),
+        paymentMode: .payAsYouGo
     ),
     subscriptionPeriod: ProductSubscriptionPeriod(
         numberOfUnits: 1,
@@ -75,20 +116,22 @@ let monthlyProduct = Product(
     )
 )
 
-if let introPrice = monthlyProduct.introductoryPrice {
-    print("Monthly offer: \(introPrice.subscriptionPeriod.periodDescription.numberOfUnits) \(introPrice.subscriptionPeriod.periodDescription.period)")
+if let introPrice = monthlyProduct.introductoryPrice,
+   let duration = introPrice.offerPeriodDescription.duration,
+   let unit = introPrice.offerPeriodDescription.unit {
+    print("Monthly product offer: \(duration) \(unit)")
 }
 
 if let subscriptionPeriod = monthlyProduct.subscriptionPeriod {
-    print("Monthly product: \(subscriptionPeriod.periodDescription.numberOfUnits) \(subscriptionPeriod.periodDescription.period)")
+    print("Monthly product: \(subscriptionPeriod.periodDescription.duration) \(subscriptionPeriod.periodDescription.unit)")
 }
 
 if let subscriptionPeriod = yearlyProduct.subscriptionPeriod {
-    print("Yearly product: \(subscriptionPeriod.periodDescription.numberOfUnits) \(subscriptionPeriod.periodDescription.period)")
+    print("Yearly product: \(subscriptionPeriod.periodDescription.duration) \(subscriptionPeriod.periodDescription.unit)")
 }
 
 /*
- Monthly offer: 2 weeks
+ Monthly product offer: 6 months
  Monthly product: 1 month
  Yearly product: 1 year
  */
