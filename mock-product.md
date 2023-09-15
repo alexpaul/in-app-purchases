@@ -8,10 +8,10 @@ struct Product {
     let productIdentifier: String
     let introductoryPrice: ProductDiscount?
     let subscriptionPeriod: ProductSubscriptionPeriod?
-    
+
     enum PeriodUnit {
         case day
-        case week 
+        case week
         case month
         case year
     }
@@ -24,29 +24,28 @@ struct ProductDiscount {
 }
 
 struct ProductSubscriptionPeriod {
-    let numberOfUnits: Int 
+    let numberOfUnits: Int
     let unit: Product.PeriodUnit
 }
 
 extension Product {
-    var periodDescription: String {
+    var periodDescription: (numberOfUnits: Int, period: String) {
         guard let introPrice = introductoryPrice else {
-            return ""
+            return (-1,"")
         }
         let plural = introPrice.subscriptionPeriod.numberOfUnits > 1
+        let period: String
         switch introPrice.subscriptionPeriod.unit {
-        case .day: 
-            return "day"
-        case .week: 
-            return "\(introPrice.subscriptionPeriod.numberOfUnits) \(plural ? "weeks" : "week")"
-        case .month: 
-            return "month"
-        case .year: 
-            return "year"
-        default: 
-            break
+        case .day:
+            period = plural ? "days" : "day"
+        case .week:
+            period = plural ? "weeks" : "week"
+        case .month:
+            period = plural ? "months" : "month"
+        case .year:
+            period = plural ? "years" : "year"
         }
-        return "unknown"
+        return (introPrice.subscriptionPeriod.numberOfUnits, period)
     }
 }
 
@@ -77,6 +76,6 @@ let monthlyProduct = Product(
     )
 )
 
-print(monthlyProduct.introductoryPrice?.price)
-print(monthlyProduct.periodDescription)
+print("\(monthlyProduct.periodDescription.numberOfUnits) \(monthlyProduct.periodDescription.period)")
+// 2 weeks
 ```
