@@ -1,5 +1,7 @@
 # Mock Product 
 
+Mocked from properties on [SKProduct](https://developer.apple.com/documentation/storekit/skproduct)
+
 ```swift
 import Foundation
 
