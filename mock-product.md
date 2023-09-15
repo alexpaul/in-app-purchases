@@ -74,17 +74,23 @@ let monthlyProduct = Product(
 )
 
 if let introPrice = monthlyProduct.introductoryPrice {
-    print("\(introPrice.subscriptionPeriod.periodDescription.numberOfUnits) \(introPrice.subscriptionPeriod.periodDescription.period)")
+    print("Monthly offer: \(introPrice.subscriptionPeriod.periodDescription.numberOfUnits) \(introPrice.subscriptionPeriod.periodDescription.period)")
     // 2 weeks
 }
 
 if let subscriptionPeriod = monthlyProduct.subscriptionPeriod {
-    print("\(subscriptionPeriod.periodDescription.numberOfUnits) \(subscriptionPeriod.periodDescription.period)")
+    print("Monthly product: \(subscriptionPeriod.periodDescription.numberOfUnits) \(subscriptionPeriod.periodDescription.period)")
     // 1 month
 }
 
 if let subscriptionPeriod = yearlyProduct.subscriptionPeriod {
-    print("\(subscriptionPeriod.periodDescription.numberOfUnits) \(subscriptionPeriod.periodDescription.period)")
+    print("Yearly product: \(subscriptionPeriod.periodDescription.numberOfUnits) \(subscriptionPeriod.periodDescription.period)")
     // 1 year
 }
+
+/*
+ Monthly offer: 2 weeks
+ Monthly product: 1 month
+ Yearly product: 1 year
+ */
 ```
