@@ -8,9 +8,16 @@ Mocked from properties on [SKProduct](https://developer.apple.com/documentation/
 import Foundation
 
 struct Product {
-    let price: NSDecimalNumber
+    // Product Identifier
     let productIdentifier: String
+
+    // Pricing Information
+    let price: NSDecimalNumber
     let introductoryPrice: ProductDiscount?
+
+    // Subscription Information
+    let subscriptionGroupIdentifier: String?
+    /// This property is nil if the SKProduct isn’t an auto-renewable subscription.
     let subscriptionPeriod: ProductSubscriptionPeriod?
 
     enum PeriodUnit {
@@ -22,16 +29,19 @@ struct Product {
 }
 
 struct ProductDiscount {
+    // Price and Payment Mode
+    let price: NSDecimalNumber
+    let paymentMode: PaymentMode
+
     enum PaymentMode: Int {
         case payAsYouGo // 0
         case payUpFront
         case freeTrial
     }
 
-    let price: NSDecimalNumber
+    // Discount Duration
     let numberOfPeriods: Int
     let subscriptionPeriod: ProductSubscriptionPeriod
-    let paymentMode: PaymentMode
 }
 
 struct ProductSubscriptionPeriod {
@@ -104,9 +114,9 @@ extension ProductDiscount {
 }
 
 let yearlyProduct = Product(
-    price: 39.99,
-    productIdentifier: "dev.alexpaul.yearly.39.99",
+    productIdentifier: "dev.alexpaul.yearly.39.99", price: 39.99,
     introductoryPrice: nil,
+    subscriptionGroupIdentifier: nil,
     subscriptionPeriod: ProductSubscriptionPeriod(
         numberOfUnits: 1,
         unit: .year
@@ -114,17 +124,16 @@ let yearlyProduct = Product(
 )
 
 let monthlyProduct = Product(
-    price: 4.99,
-    productIdentifier: "dev.alexpaul.monthly.4.99",
+    productIdentifier: "dev.alexpaul.monthly.4.99", price: 4.99,
     introductoryPrice: ProductDiscount(
         price: 0.00,
-        numberOfPeriods: 6,
+        paymentMode: .freeTrial, numberOfPeriods: 6,
         subscriptionPeriod: ProductSubscriptionPeriod(
             numberOfUnits: 2,
             unit: .week
-        ),
-        paymentMode: .freeTrial
+        )
     ),
+    subscriptionGroupIdentifier: nil,
     subscriptionPeriod: ProductSubscriptionPeriod(
         numberOfUnits: 1,
         unit: .month
@@ -146,8 +155,8 @@ if let subscriptionPeriod = yearlyProduct.subscriptionPeriod {
 }
 
 /*
-Monthly introductory offer: 2 weeks Free trial
-Monthly product: 1 month
-Yearly product: 1 year
+ Monthly introductory offer: 2 weeks Free trial
+ Monthly product: 1 month
+ Yearly product: 1 year
  */
 ```
