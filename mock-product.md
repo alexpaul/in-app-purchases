@@ -22,8 +22,8 @@ struct Product {
 }
 
 struct ProductDiscount {
-    enum PaymentMode {
-        case payAsYouGo
+    enum PaymentMode: Int {
+        case payAsYouGo // 0
         case payUpFront
         case freeTrial
     }
@@ -39,8 +39,21 @@ struct ProductSubscriptionPeriod {
     let unit: Product.PeriodUnit
 }
 
+extension ProductDiscount.PaymentMode {
+    var formattedDescription: String {
+        switch self {
+        case .payAsYouGo:
+            return "Pay as you go"
+        case .payUpFront:
+            return "Pay up front"
+        case .freeTrial:
+            return "Free trial"
+        }
+    }
+}
+
 extension ProductSubscriptionPeriod {
-    var periodDescription: (duration: Int, unit: String) {
+    var subscriptionOffer: (duration: Int, unit: String) {
         let plural = numberOfUnits > 1
         let unitDescription: String
         switch unit {
@@ -107,10 +120,10 @@ let monthlyProduct = Product(
         price: 0.00,
         numberOfPeriods: 6,
         subscriptionPeriod: ProductSubscriptionPeriod(
-            numberOfUnits: 1,
-            unit: .month
+            numberOfUnits: 2,
+            unit: .week
         ),
-        paymentMode: .payAsYouGo
+        paymentMode: .freeTrial
     ),
     subscriptionPeriod: ProductSubscriptionPeriod(
         numberOfUnits: 1,
@@ -121,19 +134,19 @@ let monthlyProduct = Product(
 if let introPrice = monthlyProduct.introductoryPrice,
    let duration = introPrice.introductoryOffer.duration,
    let unit = introPrice.introductoryOffer.unit {
-    print("Monthly product offer: \(duration) \(unit)")
+    print("Monthly introductory offer: \(duration) \(unit) \(introPrice.paymentMode.formattedDescription)")
 }
 
 if let subscriptionPeriod = monthlyProduct.subscriptionPeriod {
-    print("Monthly product: \(subscriptionPeriod.periodDescription.duration) \(subscriptionPeriod.periodDescription.unit)")
+    print("Monthly product: \(subscriptionPeriod.subscriptionOffer.duration) \(subscriptionPeriod.subscriptionOffer.unit)")
 }
 
 if let subscriptionPeriod = yearlyProduct.subscriptionPeriod {
-    print("Yearly product: \(subscriptionPeriod.periodDescription.duration) \(subscriptionPeriod.periodDescription.unit)")
+    print("Yearly product: \(subscriptionPeriod.subscriptionOffer.duration) \(subscriptionPeriod.subscriptionOffer.unit)")
 }
 
 /*
- Monthly product offer: 6 months
+ Monthly introductory offer: 6 months
  Monthly product: 1 month
  Yearly product: 1 year
  */
