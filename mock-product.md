@@ -60,7 +60,7 @@ extension ProductSubscriptionPeriod {
 extension ProductDiscount {
     /// `freeTrial` uses `numberOfUnits`
     /// `payAsYouGo` uses `numberOfPeriods`
-    var offerPeriodDescription: (duration: Int?, unit: String?) {
+    var introductoryOffer: (duration: Int?, unit: String?) {
         var plural = false
         var unit = "unknown-unit"
         var duration = 0
@@ -119,8 +119,8 @@ let monthlyProduct = Product(
 )
 
 if let introPrice = monthlyProduct.introductoryPrice,
-   let duration = introPrice.offerPeriodDescription.duration,
-   let unit = introPrice.offerPeriodDescription.unit {
+   let duration = introPrice.introductoryOffer.duration,
+   let unit = introPrice.introductoryOffer.unit {
     print("Monthly product offer: \(duration) \(unit)")
 }
 
