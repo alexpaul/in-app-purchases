@@ -1,5 +1,7 @@
 # Mock Product 
 
+![IMG_1868](https://github.com/alexpaul/in-app-purchases/assets/1819208/3df37c3b-485c-4130-955e-e08b3ddd5c5e)
+
 Mocked from properties on [SKProduct](https://developer.apple.com/documentation/storekit/skproduct)
 
 ```swift
