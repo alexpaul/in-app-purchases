@@ -62,7 +62,7 @@ extension ProductDiscount {
     /// `payAsYouGo` uses `numberOfPeriods`
     var introductoryOffer: (duration: Int?, unit: String?) {
         var plural = false
-        var unit = "unknown-unit"
+        var unit = ""
         var duration = 0
 
         switch paymentMode {
