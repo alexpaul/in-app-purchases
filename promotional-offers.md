@@ -1,6 +1,6 @@
 # Promotional Offers 
 
-👀 For lapsed and existing subscribers.
+👀 For lapsed and existing subscribers. (Pay as you go, Pay up front or Free trial offers). 
 
 > [Article](https://developer.apple.com/documentation/storekit/in-app_purchase/original_api_for_in-app_purchase/subscriptions_and_offers/setting_up_promotional_offers) You can offer a discounted or free period of service for auto-renewable subscription products on macOS, iOS, and tvOS using promotional offers. Limited-time, discounted promotional offers can be effective in winning back lapsed subscribers or retaining current subscribers.
 
