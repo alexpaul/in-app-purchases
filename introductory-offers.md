@@ -1,6 +1,6 @@
 # Introductory Offers 
 
-👀 For new subscribers and lapsed subscribers who have not yet purchased a product associated with the intro offer or a product in the same subscription group.
+👀 For new subscribers and lapsed subscribers who have not yet purchased a product associated with the intro offer or a product in the same subscription group. (Pay as you go, Pay up front or Free trial offers). 
 
 ## Contents 
 
