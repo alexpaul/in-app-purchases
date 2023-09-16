@@ -1,5 +1,7 @@
 # Introductory Offers 
 
+👀 For new subscribers and lapsed subscribers who have not yet purchased a product associated with the intro offer or a product in the same subscription group.
+
 ## Contents 
 
 1. [Testing Eligible and Ineligible Users for Introductory Offers](#testing-eligible-and-ineligible-users-for-introductory-offers)
