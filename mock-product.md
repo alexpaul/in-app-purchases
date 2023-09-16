@@ -146,8 +146,8 @@ if let subscriptionPeriod = yearlyProduct.subscriptionPeriod {
 }
 
 /*
- Monthly introductory offer: 6 months
- Monthly product: 1 month
- Yearly product: 1 year
+Monthly introductory offer: 2 weeks Free trial
+Monthly product: 1 month
+Yearly product: 1 year
  */
 ```
