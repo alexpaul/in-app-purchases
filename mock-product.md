@@ -2,9 +2,9 @@
 
 ![IMG_1868](https://github.com/alexpaul/in-app-purchases/assets/1819208/3df37c3b-485c-4130-955e-e08b3ddd5c5e)
 
-## Mocked to simulate [SKProduct](https://developer.apple.com/documentation/storekit/skproduct) 
+## Mocked to simulate `SKProduct` 
 
-> `SKProduct` is part of the Original API for in-app purchases "StoreKit 1". 
+> [`SKProduct`](https://developer.apple.com/documentation/storekit/skproduct) is part of the Original API for in-app purchases "StoreKit 1". 
 
 ```swift
 import Foundation
