@@ -8,9 +8,10 @@
     * Created and downloadable from App Store Connect.
     * One-time codes are redeemable through a redemption URL.
   * Custom codes.
-    * Can also be redeemed through a redemption URL. 
+    * Can also be redeemed through a redemption URL.
     * Reusable codes that can be used in campaigns e.g. "SPRINGSALE2024".
-    * Ideal for large campaigns that require mass distribution.
+    * Can be entered from a flyer or similar marketing campaign using the custom code.
+    * As per Apple ideal for large campaigns that require mass distribution.
 
 ## Configuring offer codes 
 
