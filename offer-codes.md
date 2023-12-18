@@ -43,5 +43,7 @@ https://github.com/alexpaul/in-app-purchases/assets/1819208/27826489-8665-47f3-b
 
 * [Apple docs: Set up offer codes](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes/)
 * [Apple docs: Implementing offer codes in your app](https://developer.apple.com/documentation/storekit/in-app_purchase/original_api_for_in-app_purchase/subscriptions_and_offers/implementing_offer_codes_in_your_app)
+* [Apple tech talks: Get started with custom offer codes - 2022](https://developer.apple.com/videos/play/tech-talks/110150/)
+* [Apple tech talks: Subscription offer codes - 2020](https://developer.apple.com/videos/play/tech-talks/10868/)
 * [Developer forum: sandbox not working for offer codes](https://developer.apple.com/forums/thread/688550)
 
