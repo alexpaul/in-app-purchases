@@ -43,6 +43,28 @@ https://github.com/alexpaul/in-app-purchases/assets/1819208/27826489-8665-47f3-b
 
 ![sandbox-testing-not-available](https://github.com/alexpaul/in-app-purchases/assets/1819208/cf0bd918-e5f0-4a13-827c-6666da2c44da)
 
+## Presenting the redemption sheet in code 
+
+```swift
+import SwiftUI
+import StoreKit
+
+
+struct ContentView: View {
+    @State private var redeemSheetIsPresented = false
+    
+    var body: some View {
+        Button("Present offer code redemption sheet.") {
+            redeemSheetIsPresented = true
+        }
+        .offerCodeRedemption(isPresented: $redeemSheetIsPresented) { result in
+            // Handle result
+        }
+    }
+}
+```
+
+[`offerCodeRedemption`](https://developer.apple.com/documentation/storekit/storeview/4203466-offercoderedemption)
 
 ## Resources
 
