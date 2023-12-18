@@ -3,6 +3,7 @@
 ## About offer codes 
 
 * You can create codes for a maximum of 1,000,000 redemptions per app, per quarter.
+* Helps acquire, retain, and win back subscribers.
 * There are two types of offer codes:
   * One-time use codes.
     * Created and downloadable from App Store Connect.
