@@ -1,0 +1,43 @@
+#  Implementing and testing offer codes 
+
+## About offer codes 
+
+* You can create codes for a maximum of 1,000,000 redemptions per app, per quarter.
+* There are two types of offer codes:
+  * One-time use codes.
+    * Created and downloadable from App Store Connect.
+    * One-time codes are redeemable through a redemption URL.
+  * Custom codes.
+    * Can also be redeemed through a redemption URL. 
+    * Reusable codes that can be used in campaigns e.g. "SPRINGSALE2024".
+    * Ideal for large campaigns that require mass distribution.
+
+## Configuring offer codes 
+
+* A required in-app purchase subscription should exist or need to be created.
+* Select the subscription product. 
+* Navigate to "Offer Codes" in App Store Connect.
+* Proceed to create the offer code.
+    
+## Redemption Flow 
+
+* Both offer codes can be redeemed via a redemption URL that links to the App Store or deep-links to your app. 
+* Apple recommends custom codes for large-scale campaigns. 
+* Once the user clicks on the redemption URL the following happens: 
+  * The user is navigated to the App Store if the app is not present on the device.
+  * The user is navigated to the redemption sheet in-app if the app is present.
+
+## Using StoreKit testing ✅
+
+* Create a local StoreKit configuration file.
+* Or use a synced StoreKit configuration file from App Store Connect.
+
+## Using Sandbox testing ❌
+
+* Not currently available.
+
+## Resources
+
+* [Apple docs: Set up offer codes](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes/)
+* [Developer forum: sandbox not working for offer codes](https://developer.apple.com/forums/thread/688550)
+
