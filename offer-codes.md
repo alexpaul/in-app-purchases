@@ -38,6 +38,10 @@ https://github.com/alexpaul/in-app-purchases/assets/1819208/27826489-8665-47f3-b
 ## Using Sandbox testing ❌
 
 * Not currently available.
+* Cannot use App Store Connect offer codes to redeem in Sandbox. [See screenshot below].
+
+![sandbox-testing-not-available](https://github.com/alexpaul/in-app-purchases/assets/1819208/cf0bd918-e5f0-4a13-827c-6666da2c44da)
+
 
 ## Resources
 
