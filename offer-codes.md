@@ -33,6 +33,8 @@
 * Create a local StoreKit configuration file.
 * Or use a synced StoreKit configuration file from App Store Connect.
 
+https://github.com/alexpaul/in-app-purchases/assets/1819208/27826489-8665-47f3-b19d-4075b89cf480
+
 ## Using Sandbox testing ❌
 
 * Not currently available.
