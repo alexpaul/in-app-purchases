@@ -39,5 +39,6 @@
 ## Resources
 
 * [Apple docs: Set up offer codes](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes/)
+* [Apple docs: Implementing offer codes in your app](https://developer.apple.com/documentation/storekit/in-app_purchase/original_api_for_in-app_purchase/subscriptions_and_offers/implementing_offer_codes_in_your_app)
 * [Developer forum: sandbox not working for offer codes](https://developer.apple.com/forums/thread/688550)
 
