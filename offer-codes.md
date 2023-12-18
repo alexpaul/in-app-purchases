@@ -22,10 +22,10 @@
     
 ## Redemption Flow 
 
-* Both offer codes can be redeemed via a redemption URL that links to the App Store or deep-links to your app. 
+* Both offer codes can be redeemed via a redemption URL that links to the App Store or deep links to your app. 
 * Apple recommends custom codes for large-scale campaigns. 
-* Once the user clicks on the redemption URL the following happens: 
-  * The user is navigated to the App Store if the app is not present on the device.
+* Once the user clicks on the redemption URL one of the following scenarios will happen: 
+  * The user is navigated to the App Store if the app is not installed on their device.
   * The user is navigated to the redemption sheet in-app if the app is present.
 
 ## Using StoreKit testing ✅
