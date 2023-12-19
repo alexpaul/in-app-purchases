@@ -33,6 +33,9 @@
 
 * Create a local StoreKit configuration file.
 * Or use a synced StoreKit configuration file from App Store Connect.
+* Below in the screenshot and video we have an introductory offer, then the offer code, and finally the auto-renewable product.
+ 
+![payment-sheet](https://github.com/alexpaul/in-app-purchases/assets/1819208/e11bbe76-718a-45c5-9115-4b3ce2a4eb08)
 
 https://github.com/alexpaul/in-app-purchases/assets/1819208/27826489-8665-47f3-b19d-4075b89cf480
 
