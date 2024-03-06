@@ -17,6 +17,8 @@
 
 ![Screen Shot 2022-04-12 at 9 49 37 PM](https://user-images.githubusercontent.com/1819208/163083557-0662d0c6-9855-4399-ab4c-ca6e712f5a18.png)
 
+> By default, accounts are set to a speed equalization of 1 month = 5 minutes. You can slow down or speed up the renewal period using the options below. Subscriptions automatically renew up to 12 times before auto-renewal turns off on the thirteenth renewal attempt. Note that the speed of renewal in sandbox depends on the length of the subscription.
+
 * [Apple docs: Manage Sandbox Apple ID Settings](https://developer.apple.com/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-id-settings/)
 * [RevenueCat](https://www.revenuecat.com/blog/engineering/the-ultimate-guide-to-subscription-testing-on-ios/)
 
