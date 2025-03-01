@@ -1,23 +1,6 @@
 # App Store Receipt
 
-## Receipt Validation in iOS 7+
-
-> [RevernueCat](https://www.revenuecat.com/blog/app-store-receipt-file-example/): Starting with iOS 7, Apple introduced an alternative method for accessing a user’s IAP history. Previously developers had to rely on the SKPaymentQueue as the source of truth, listening to transactions and keeping track. With iOS 7, Apple introduced NSBundle.appStoreReceiptURL that gave developers a disk location they could find this new “receipt” file. The intention was to have developers use this file as the source of truth for IAPs, rather than the StoreKit purchase queue which can be difficult to build around.
-
-***
-
-## Receipt 
-
-> [`appStoreReceiptURL`](https://developer.apple.com/documentation/foundation/nsbundle/1407276-appstorereceipturl): The receipt isn’t necessary if you use `AppTransaction` to validate the app download, or `Transaction` to validate in-app purchases. Only use the receipt if your app uses the "Original API for in-app purchase", or needs the receipt to validate the app download because it can’t use `AppTransaction`.
-
-***
-
-## Receipt Fields
-
-> Subscription Expiration Date. This key is only present for auto-renewable subscription receipts. Use this value to identify the date when the subscription will renew or expire, to determine if a customer should have access to content or service. After validating the latest receipt, if the subscription expiration date for the latest renewal transaction is a past date, it is safe to assume that the subscription has expired.
-
-* [`latest_receipt_info`](https://developer.apple.com/documentation/appstorereceipts/responsebody/latest_receipt_info): An array that contains all in-app purchase transactions.
-* [`pending_renewal_info`](https://developer.apple.com/documentation/appstorereceipts/responsebody/pending_renewal_info): An array of elements that refers to open or failed auto-renewable subscription renewals.
+> [Apple](https://developer.apple.com/documentation/appstorereceipts/validating_receipts_on_the_device): The receipt isn’t necessary if you use [AppTransaction](https://developer.apple.com/documentation/storekit/apptransaction) to validate the app download, or [Transaction](https://developer.apple.com/documentation/storekit/transaction) to validate in-app purchases. Only use the receipt if your app uses the [Original API for In-App Purchase](https://developer.apple.com/documentation/storekit/original-api-for-in-app-purchase), or needs the receipt to validate the app download because it can’t use AppTransaction.
 
 ***
 
