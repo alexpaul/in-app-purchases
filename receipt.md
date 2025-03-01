@@ -7,3 +7,4 @@
 ## Resources
 
 * [Apple docs: App Store Receipts](https://developer.apple.com/documentation/appstorereceipts) ⚠️ Deprecated
+* [Apple docs: Validating receipts on the device](https://developer.apple.com/documentation/appstorereceipts/validating_receipts_on_the_device)
